@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduzione}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Che cosa è un sistema distribuito?}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Caratteristiche}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Gruppi}{3}{}%
+\contentsline {section}{\numberline {2}Architetture Software}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Tipi di layer}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Diversi tipi di Sistemi Distribuiti}{4}{}%
+\contentsline {section}{\numberline {3}Il Modello Client-Server}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Problemi Fondamentali}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Trasparenza}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Information Hiding}{8}{}%
+\contentsline {subsection}{\numberline {3.3}Il concetto di Protocollo}{8}{}%
