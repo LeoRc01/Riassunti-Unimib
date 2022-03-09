@@ -1,0 +1,88 @@
+% the first part of the document before the begin is called preamble
+\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+%
+\author{Leonardo Valente}
+\title{Basi di Dati}
+
+\begin{document}
+    \maketitle
+
+    \section{Modello ER}
+    Qualsiasi progetto, prima di essere mandato in produzione, segue un ciclo di vita, di solito composto da:
+
+    \begin{itemize}
+        \item Studio di fattibilità: definizione dei costi e delle priorità
+        \item Raccolta di analisi e dei requisiti: studio delle proprietà del sistema
+        \item Progettazione: di dati e funzioni
+        \item Implementazione: ovvero la realizzazzione del progetto
+        \item Validazione e collaudio: la fase di sperimentazione
+        \item Funzionamento: fase di produzione
+        \item Manutenzione: dove arriva il vero guadagno
+    \end{itemize}
+
+    Questo ciclo di vita segue un \textbf{modello a spirale}, quindi un ciclo dove in ogni fase è possibile
+    andare avanti o indietro in base alle esigenze.
+
+    \subsection{Progettazione}
+    La progettazione delle applicazioni schematizza le operazioni sui dati e progetta il software.
+    E' opportuno quindi seguire una \textbf{metodologia di progetto}.
+    Essa ci permette di \textbf{suddividere} la progettazione in fasi indipenti,
+    fornendo delle \textbf{strategie} da seguire e dei \textbf{criteri} di scelta.
+    \\
+    Nella progettazione di Database ci sono 3 fasi di progettazione: 
+    \begin{itemize}
+        \item Progettazione concettuale (modello ER)
+        \item Progettazione logica
+        \item Progettazione fisica
+    \end{itemize}
+    Ognuna di queste fasi si basa su un modello che permette di generare una rappresentazione
+    formale (di solito uno schema) del nostro universo.
+    
+    \subsubsection{Progettazione concettuale}
+    Traduce i requisiti del sistema in un modello ER, espresso in modo indipendente dalle scelte implementative.
+    \\La descrizione si deve concentrare sui \textbf{dati} e sulle loro \textbf{relazioni}, non sulle scelte implementative.
+
+    \subsubsection{Progettazione logica}
+    Consiste nella traduzione dello schema concettuale nel modello dei dati del DBMS (Modello relazionale).
+
+    \subsubsection{Progettazione fisica}
+    Completa lo schema logico ottenuto con le specifiche proprio dell'HW/SW scelto. 
+    Viene interamente effettuato dal DBMS. 
+    \newpage
+    \subsection{Introduzione al Modello ER}
+    Il modello Entità - Relazione è un \textbf{linguaggio grafico semi-formale} per la rappresentazione di schemi concettuali.
+    Esso è ormai diventato uno \textit{standard} nelle metodologie di progetto.
+
+    Iniziamo facendo una distinzione fra \textbf{Entità} e \textbf{Relazioni}.
+
+    \begin{itemize}
+        \item \textbf{Entità}: classe di oggetti dell'applicazione di interesse con proprietà comuni e con esistenza "autonoma",
+        della quale si vogliono registrare fatti specifici.
+        \\Le entità hanno degli attributi che la descrivono.
+        \\Una \textbf{occorrenza} (o istanza) di una entità è il singolo oggetto creato sulla base dell'entità da cui deriva
+        \\Le entità vengono rappresentate nel modello ER tramite dei \textit{rettangoli}.
+        \item \textbf{Attributi}: un attributo è definito su un dominio di valori.
+        Esso è una funzione che associa ad ogni occorrenza \textbf{un} particolare valore (non di più!)
+        Gli attributi possono essere composti e possono essere \textbf{qualsiasi cosa}.
+        \\A meno che non venga definito il contrario, gli attributi sono \textbf{obbligatori}.
+        \item \textbf{Relazione}: fatto che descrive un'azione o una situazione e che \textit{stabilisce legami logici tra istanze di entità}.
+        \\I legami possono essere fra più di due entità e il numero delle entià coinvolte ne determina il \textbf{grado}.
+        \\Ogni relazione ha un nome che la identifica.
+        \\Inoltre, le relazioni possono avere degli attributi, chiamati appunto \textbf{attributi delle relazioni} che
+        modellano il legame tra le entità.
+        \\\\Le relazioni vengono rappresentate nel modello ER tramite dei \textit{rombi}.
+        
+    \end{itemize}
+
+    \newpage
+    \subsection*{Associazioni ad anello}
+    Un'associazione può coinvolgere "due o più volte" la stessa entità (associazione ricorisiva o ad anello).
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.7]{roles.png}
+    \end{figure}
+
+
+\end{document}
