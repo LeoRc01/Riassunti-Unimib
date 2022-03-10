@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Modello ER}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Progettazione}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Progettazione concettuale}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Progettazione logica}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Progettazione fisica}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Introduzione al Modello ER}{3}{}%
+\contentsline {section}{\numberline {2}Cardinalità delle Relazioni}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Identificatori di una entità}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Relazione IS-A}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Principio di ereditarietà}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Generalizzazione}{6}{}%
