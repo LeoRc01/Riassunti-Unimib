@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1646839036 "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" "sd.pdf" "sd" 1646841160
+["pdflatex"] 1646839036 "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" "sd.pdf" "sd" 1646923738
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1634741608 10390718 756107502a83d8b9ec995772ee88b1be ""
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1634734329 335493 e59bd1a6c1c38f69c60a89e13211d84d ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001771820 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -42,7 +42,7 @@
   "sd.tex" 1646841047 11712 98aaa3d52c8d50389ab42782fbd3f51d ""
   "sd.toc" 1646839037 850 e5038f63585b0b0e2f1698dfdeddddbb "pdflatex"
   (generated)
+  "sd.log"
   "sd.aux"
   "sd.toc"
   "sd.pdf"
-  "sd.log"
