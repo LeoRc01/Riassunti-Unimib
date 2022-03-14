@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1646924711 "c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex" "db.pdf" "db" 1646924711
+["pdflatex"] 1647250919 "c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex" "db.pdf" "db" 1647250920
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1634741608 10390718 756107502a83d8b9ec995772ee88b1be ""
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1634734329 335493 e59bd1a6c1c38f69c60a89e13211d84d ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001771820 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -33,14 +33,14 @@
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.sty" 1622999725 2671 4de6781a30211fe0ea4c672e4a2a8166 ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty" 1622999725 4007 3bccccf8f35e1bc1ef0f7c55ceeb7713 ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3backend/l3backend-pdftex.def" 1634035438 27665 ce3fed4bb7b420c41acafce240b8073a ""
-  "c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex" 1646924709 7745 67147f41946bb59e96774877cf8ef2cd ""
-  "db.aux" 1646924711 1435 a84084e629e36a250efc9755af42df69 "pdflatex"
-  "db.tex" 1646924709 7745 67147f41946bb59e96774877cf8ef2cd ""
-  "db.toc" 1646924711 814 ed8733386be373bd9caf426014d1b5a0 "pdflatex"
-  "images//isa.png" 1646923314 350669 5921ecaa6759644ebbf10172246f1585 ""
+  "c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex" 1647250918 8275 68810c98d0268b73e1a1001331a5840b ""
+  "db.aux" 1647250920 1323 c6a12f88190d7ed18c0b506575ded475 "pdflatex"
+  "db.tex" 1647250918 8275 68810c98d0268b73e1a1001331a5840b ""
+  "db.toc" 1647250920 809 2081a1da89513bab5b6628a308aed0d0 "pdflatex"
+  "images//generalizzazione.png" 1647245632 78277 6606f8a0cef3eb4670cfd0e91d0c0825 ""
   "images//roles.png" 1646844277 29640 4774f12076b78ebdae9c148e97c6ace3 ""
   (generated)
+  "db.pdf"
   "db.toc"
   "db.aux"
-  "db.pdf"
   "db.log"

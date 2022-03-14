@@ -93,6 +93,8 @@
     \\
     E' molto importante non sbagliare la \textit{cardinalità massima}. E' la più importante fra le due.
     Se sbagliamo la cardinalità, sbagliamo il Database!
+    \\\\
+    \textbf{Nota}: anche gli attributi possono avere cardinalità!
     \begin{itemize}
         \item \textbf{Molti a Molti} (3 tabelle). Quando zero o più istanze della prima entità si possono associare a zero o più istanze della seconda entità.
         \item \textbf{Uno a Molti} (2 tabelle). Quando ogni istanza della prima entità si può associare a una o più istanze della seconda entià.
@@ -103,21 +105,18 @@
     E' uno strumento per l'identificazione univoca delle occorrenze di una entità.
     Ci sono due tipi di identificatori:
     \begin{itemize}
-        \item \textbf{Identificatore primario} (Primary Key), che serve per distinguere in modo univoco una istanza di una entità.
+        \item \textbf{Identificatore interno} (Primary Key), che serve per distinguere in modo univoco una istanza di una entità.
+        \textit{Deve essere unico}.
+        \\L'identificatore interno può essere combinazione di più attributi!
         \item \textbf{Identificatore esterno} (Foreign Key), che serve per fare riferimento ad una istanza di un'altra entità avente come
         identificatore primario l'identificatore esterno dell'oggetto che stiamo prendendo in considerazione.
     \end{itemize}
     Ogni entità deve possedere almeno un identificatore (primario), ma può averne in generale più di uno (esterno).
 
-    \subsection{Relazione IS-A}
+    \section{Relazione IS-A}
     Può accadere che tra due classi rappresentate da due entità nello schema concettuale sussista la 
     \textbf{relazione IS-A}, cioè che \textbf{ogni istanza di una sia anche istanza dell'altra}.
     \\La relazione IS-A si può definire tra \textit{due entità}: \textbf{entità padre} e \textbf{entità figlio}.
-
-    \subsubsection{Principio di ereditarietà}
-    Ogni proprietà del padre è anche una proprietà del figlio, che però non viene esplicitamente riportata nello schema concettuale.
-    \\L'entità figlio può avere degli attributi in più rispetto all'entità padre.
-
 
     \newpage
     \subsubsection{Generalizzazione}
@@ -131,10 +130,20 @@
 
     \begin{figure}[htbp]
         \centering
-        \includegraphics[scale=0.5]{isa.png}
-        \caption{Mancano le \textit{cardinalità }}
+        \includegraphics[scale=0.7]{generalizzazione.png}
+        
+        \label{<label>}
     \end{figure}
 
+    Come possiamo vedere, nella relazione  \textit{completa}, l'unione dei due sottoinsiemi A e B è proprio 
+    l'insieme "padre" C. Nella relazione \textit{NON completa}, invece, ci saranno alcuni elementi di C che non fanno
+    parte ne di A e ne di B.
+    \\
+    Una entità può avere \textbf{al massimo una e una sola} entità padre.
+
+    \subsubsection{Principio di ereditarietà}
+    Ogni proprietà del padre è anche una proprietà del figlio, che però non viene esplicitamente riportata nello schema concettuale.
+    \\L'entità figlio può avere degli attributi in più rispetto all'entità padre.
 
 
 

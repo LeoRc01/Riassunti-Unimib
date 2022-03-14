@@ -124,9 +124,9 @@ INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.t
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
 OUTPUT sd.toc
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
 OUTPUT sd.pdf
 INPUT C:\Users\Leo\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\images\\layered.png
 INPUT .\images\\layered.png
 INPUT images\\layered.png
@@ -156,10 +156,55 @@ INPUT .\images\\proxy.png
 INPUT .\images\\proxy.png
 INPUT .\images\\proxy.png
 INPUT .\images\\proxy.png
+INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT .\images\\socketsteps.png
+INPUT .\images\\socketsteps.png
+INPUT images\\socketsteps.png
+INPUT .\images\\socketsteps.png
+INPUT .\images\\socketsteps.png
+INPUT .\images\\socketsteps.png
+INPUT .\images\\socketsteps.png
+INPUT .\images\\socketsteps2.png
+INPUT .\images\\socketsteps2.png
+INPUT images\\socketsteps2.png
+INPUT .\images\\socketsteps2.png
+INPUT .\images\\socketsteps2.png
+INPUT .\images\\socketsteps2.png
+INPUT .\images\\socketsteps2.png
+INPUT .\images\\monoprocesso.png
+INPUT .\images\\monoprocesso.png
+INPUT images\\monoprocesso.png
+INPUT .\images\\monoprocesso.png
+INPUT .\images\\monoprocesso.png
+INPUT .\images\\monoprocesso.png
+INPUT .\images\\monoprocesso.png
+INPUT .\images\\multithread.png
+INPUT .\images\\multithread.png
+INPUT images\\multithread.png
+INPUT .\images\\multithread.png
+INPUT .\images\\multithread.png
+INPUT .\images\\multithread.png
+INPUT .\images\\multithread.png
+INPUT .\images\\multiprocesso.png
+INPUT .\images\\multiprocesso.png
+INPUT images\\multiprocesso.png
+INPUT .\images\\multiprocesso.png
+INPUT .\images\\multiprocesso.png
+INPUT .\images\\multiprocesso.png
+INPUT .\images\\multiprocesso.png
+INPUT .\images\\select.png
+INPUT .\images\\select.png
+INPUT images\\select.png
+INPUT .\images\\select.png
+INPUT .\images\\select.png
+INPUT .\images\\select.png
+INPUT .\images\\select.png
 INPUT sd.aux
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\cm-super\cm-super-ts1.enc
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
+INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb

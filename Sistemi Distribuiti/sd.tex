@@ -231,10 +231,156 @@
         \item SMTP - Simple Mail Transfer Protocol
     \end{itemize}
     
+    \section{Le Socket}
+    I processi sono i programmi in esecuzione, che sono aree di memoria gestite dal Sistema Operativo.
+    Ogni processo comunica attraverso dei \textbf{canali},
+    che controllano i \textit{flussi di dati in \textbf{entrata} e \textbf{uscita}}.
+    \\Dall'esterno, ogni canale è identificato da un numero intero detto \textbf{porta}.
+    \\\\
+    Le \textbf{socket} sono dei particolari canali per la comunicazione tra \textit{processi} che non condividono memoria.
+    \\Per potersi connettere o inviare dati ad un processo A, un processo B deve conoscere la macchina (\textit{host})
+    che esegue A e la porta a cui A è connesso. (\textit{Well known port (?)})
+    \\\\
     
+    \subsection{Servizi di trasporto di dati}
+
+    \subsubsection*{TCP}
+    Il servizio \textit{TCP} è un protocollo \textbf{orientato alla connessione}, ovvero 
+    che il \textit{client} invia al \textit{server} una richiesta di connessione, e il server
+    risponde di conseguenza.
+    \\TCP è famoso per il suo \textbf{trasporto affidabile}, tra la comunicazione tra processi.
+    \\Possiede anche un \textbf{controllo di flusso} (il mittente rallenta per non sommergere il ricevente)
+    e un \textbf{controllo della congestione} (il mittente rallenta quando la rete è sovraccaricata).
      
-    
+    \subsubsection*{UDP}
+    UDP è un protocollo che \textbf{non} garantisce la ricezione del messaggio, e 
+    in generale \textbf{non} possiede tutte le funzionalità di sicurezza del TCP.
+    \\Quindi, \textit{perchè esiste UDP?}
+    \\UDP può essere molto utile per le applicazioni che tollerano perdite parziali
+    (ad esempio un servizio di video streaming, anche se perdiamo qualche frame non ci accorgiamo nemmeno)
+    a vantaggio delle prestazioni.
+    \\\\
+    Le socket non sono altro che delle API per accedere ai servizi di trasporto TCP e UDP.
+    \\\\
+    \subsection{Comunicazione via socket}
+    La comunicazione TCP/IP avviene attraverso \textbf{flussi di byte} dopo una
+    \textbf{connessione esplicita}, tramite normali \textit{System Call} di read/write.
 
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.7]{socketsteps.png}
+    \end{figure}
 
+    \begin{itemize}
+        \item \textbf{Socket}: viene creata un nuovo canale socket.
+        \item \textbf{Bind}: viene associato un \textit{local address (porta)} alla socket per l'identificazione del processo
+        \item \textbf{Listen}: si mette in ascolto di nuove connessioni
+        \item \textbf{Connect}: il client invia una richiesta di connessione al server
+        \item \textbf{Accept}: accetta la connessione del client.
+        \\Crea una nuova porta per gestire la \textbf{comunicazione} (dedicata). 
+        \item \textbf{Write}: invia dei dati attraverso il canale
+        \item \textbf{Read}: riceve dei dati attraverso il canale
+        \item \textbf{Close}: chiude la connessione
+    \end{itemize}
+    La \textbf{comunicazione} è un ciclo continuo di \textit{read} e \textit{write}
+    tra il client e il server fino a che non viene chiusa la connessione.
+    \\Le socket trasportano degli \textit{stream}, quindi non esiste il concetto di messaggio,
+    è appunto un flusso continuo di dati.
+    \\Però la lettura e la scrittura avvengono per un numero arbitrario di byte.
+    \\\\
+    \textbf{Connect} e \textbf{Accept} "bloccano" il sistema (rispettivamente il client e il server)
+     fino a che non viene stabilita una connessione (vengono messi in attesa).
+    \\\\
+    \newpage
+    \textit{Perchè non viene creata solo una porta per la comunicazione ma ne vengono create molteplici?}
+    \\\\Per gestire e identificare le varie connessioni che sono state create tra i client che si sono collegati al server.
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.6]{socketsteps2.png}
+    \end{figure}
+
+    \subsection{Progettare una Applicazione con le Socket}
+    \begin{itemize}
+        \item \textbf{Client}: L'architettura è più semplice di quella di un server:
+        \\di solito è una applicazione che usa una socket anzichè un altro canale I/O
+        \item \textbf{Server}: L'architettura prevede che:
+        \begin{itemize}
+            \item venga creata una socket con una porta nota per accettare le richieste di connessione
+            \item entri in un ciclo infinito in cui alternare:
+            \begin{itemize}
+                \item attesa/accettazione di una richiesta di connessione da un client
+                \item ciclo lettura-esecuzione
+                \item chiusura connessione
+            \end{itemize}        
+        \end{itemize}
+    \end{itemize}
+
+    \newpage
+
+    \section{Architettura dei Server}
+    I server possono essere:
+    \begin{itemize}
+        \item \textbf{Iterativi}: soddisfano una richiesta alla volta
+        \item \textbf{Concorrenti a processo singolo}: simulano la presenza di un server dedicato
+        \item \textbf{Concorrenti multi-processo}: creano server dedicati
+        \item \textbf{Concorrenti multi-thread}: creano thread dedicati
+    \end{itemize}
+
+    \subsection{Server Iterativi}
+    Al momento di una richiesta di connessione, il server crea una socket 
+    temporanea per stabilire una connessione diretta con il client.
+    \\Eventuali ultieriori richieste, verranno accodate alla porta nota per essere soddisfatte in seguito.
+    \\\\
+    Questa architettura ha il \textbf{vantaggio} che è molto semplice da progettare, \textbf{però} viene servito un client alla volta,
+    mettendo appunto in attesa gli altri. 
+
+    \subsection{Server Concorrenti}
+
+    Un server concorrente può gestire più connessioni client.
+
+    \begin{itemize}
+        \item \textbf{Monoprocesso}:
+        Esistono delle funzioni (\textit{select in C}) che vanno a selezionare i canali pronti all'uso.
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.7]{monoprocesso.png}
+            
+        \end{figure}
+        \\S1 è la socket per accettare le richieste di connessione, le altre sono le connessioni individuali.
+        \\Nei server monoprocesso, gli utenti condividono lo stesso spazio di lavoro, quindi adatto
+        per le applicazioni cooperative che prevedono la modifica dello stato
+        
+        \item \textbf{Multi-thread}:
+        \\Ho un processo singolo, e all'interno dei piccoli sotto processi (Thread) che simulano un processo a se
+
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.5]{multithread.png}
+        \end{figure}
+
+        \item \textbf{Multi-processo}:
+        Ho degli effettivi processi clone, quindi veri e propri server "fisici", non simulati.
+
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.5]{multiprocesso.png}
+            
+            
+        \end{figure}
+        Nei server multiprocesso, ogni utente ha uno spazio di lavoro autonomo, quindi adatto
+        per le applicazioni che non modificano lo stato del server, oppure per quelle applicazioni
+        che prevedono una modifica solamente al proprio spazio di lavoro dedicato.
+    \end{itemize}
+    \newpage
+    Per quanto riguarda la funzione di \textit{select}, essa permette di gestire in modo non bloccante
+    i diversi canali di I/O.
+    \\(Una istruzione \textit{bloccante} è quando il sistema attende la conclusione dell'operazione 
+    richiesta prima di restituire il controllo al chiamante)
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.66]{select.png}
+    \end{figure}
     
 \end{document}

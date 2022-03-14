@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  9 MAR 2022 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  14 MAR 2022 12:57
 entering extended mode
 **"c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex"
 (c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex
@@ -92,7 +92,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `sd.toc'.
 
+ [1
 
+{C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 26--41
 
  []
@@ -107,9 +109,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--41
 
  []
 
-[1
-
-{C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+[2]
 <./images//layered.png, id=12, 1309.89375pt x 526.21594pt>
 File: ./images//layered.png Graphic file (type png)
 <use ./images//layered.png>
@@ -120,8 +120,8 @@ Overfull \hbox (29.17458pt too wide) in paragraph at lines 90--91
 [] 
  []
 
-[3 <./images//layered.png>] [4] [5]
-<./images//clientserver.png, id=24, 615.80063pt x 268.00125pt>
+[3] [4 <./images//layered.png>] [5] [6]
+<./images//clientserver.png, id=27, 615.80063pt x 268.00125pt>
 File: ./images//clientserver.png Graphic file (type png)
 <use ./images//clientserver.png>
 Package pdftex.def Info: ./images//clientserver.png  used on input line 146.
@@ -131,13 +131,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--155
 
  []
 
-<./images//servermultipli.png, id=25, 402.00188pt x 276.28218pt>
+<./images//servermultipli.png, id=28, 402.00188pt x 276.28218pt>
 File: ./images//servermultipli.png Graphic file (type png)
 <use ./images//servermultipli.png>
 Package pdftex.def Info: ./images//servermultipli.png  used on input line 162.
 (pdftex.def)             Requested size: 201.00044pt x 138.14075pt.
-[6 <./images//clientserver.png> <./images//servermultipli.png>]
-<./images//proxy.png, id=31, 499.11469pt x 190.46156pt>
+[7 <./images//clientserver.png> <./images//servermultipli.png>]
+<./images//proxy.png, id=35, 499.11469pt x 190.46156pt>
 File: ./images//proxy.png Graphic file (type png)
 <use ./images//proxy.png>
 Package pdftex.def Info: ./images//proxy.png  used on input line 171.
@@ -147,19 +147,130 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--198
 
  []
 
-[7 <./images//proxy.png>] [8] (sd.aux) ) 
+[8 <./images//proxy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 235--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--244
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 256--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--265
+
+ []
+
+<./images//socketsteps.png, id=44, 659.46375pt x 213.79875pt>
+File: ./images//socketsteps.png Graphic file (type png)
+<use ./images//socketsteps.png>
+Package pdftex.def Info: ./images//socketsteps.png  used on input line 271.
+(pdftex.def)             Requested size: 461.62148pt x 149.6581pt.
+
+Overfull \hbox (71.62148pt too wide) in paragraph at lines 271--272
+ [][] 
+ []
+
+[10]
+Overfull \hbox (26.96043pt too wide) in paragraph at lines 276--277
+[]\OT1/cmr/bx/n/12 Bind\OT1/cmr/m/n/12 : viene as-so-ci-ato un \OT1/cmr/m/it/12 lo-cal ad-dress (porta) \OT1/cmr/m/n/12 alla socket per l'identificazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+
+ []
+
+[11 <./images//socketsteps.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
+
+ []
+
+<./images//socketsteps2.png, id=53, 676.77844pt x 279.29344pt>
+File: ./images//socketsteps2.png Graphic file (type png)
+<use ./images//socketsteps2.png>
+Package pdftex.def Info: ./images//socketsteps2.png  used on input line 300.
+(pdftex.def)             Requested size: 406.0702pt x 167.57735pt.
+
+Overfull \hbox (16.0702pt too wide) in paragraph at lines 300--301
+ [][] 
+ []
+
+
+Overfull \hbox (1.44055pt too wide) in paragraph at lines 312--313
+[]\OT1/cmr/m/n/12 attesa/accettazione di una richi-esta di con-nes-sione da un client 
+ []
+
+[12 <./images//socketsteps2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 331--337
+
+ []
+
+<./images//monoprocesso.png, id=58, 240.14719pt x 177.66376pt>
+File: ./images//monoprocesso.png Graphic file (type png)
+<use ./images//monoprocesso.png>
+Package pdftex.def Info: ./images//monoprocesso.png  used on input line 347.
+(pdftex.def)             Requested size: 168.10187pt x 124.36377pt.
+[13 <./images//monoprocesso.png>]
+<./images//multithread.png, id=64, 236.38312pt x 193.47281pt>
+File: ./images//multithread.png Graphic file (type png)
+<use ./images//multithread.png>
+Package pdftex.def Info: ./images//multithread.png  used on input line 359.
+(pdftex.def)             Requested size: 118.19127pt x 96.73616pt.
+<./images//multiprocesso.png, id=65, 243.15843pt x 185.19188pt>
+File: ./images//multiprocesso.png Graphic file (type png)
+<use ./images//multiprocesso.png>
+Package pdftex.def Info: ./images//multiprocesso.png  used on input line 367.
+(pdftex.def)             Requested size: 121.57892pt x 92.5957pt.
+ [14 <./images//multithread.png> <./images//multiprocesso.png>]
+Overfull \hbox (26.90213pt too wide) in paragraph at lines 376--380
+\OT1/cmr/m/n/12 (Una istruzione \OT1/cmr/m/it/12 bloc-cante \OT1/cmr/m/n/12 e quando il sis-tema at-tende la con-clu-sione dell'operazione
+ []
+
+<./images//select.png, id=71, 280.79906pt x 285.31593pt>
+File: ./images//select.png Graphic file (type png)
+<use ./images//select.png>
+Package pdftex.def Info: ./images//select.png  used on input line 383.
+(pdftex.def)             Requested size: 185.32794pt x 188.3091pt.
+[15 <./images//select.png>] (sd.aux) ) 
 Here is how much of TeX's memory you used:
- 1269 strings out of 478893
- 20370 string characters out of 2849984
- 317423 words of memory out of 3000000
- 19169 multiletter control sequences out of 15000+600000
- 409282 words of font info for 46 fonts, out of 8000000 for 9000
+ 1320 strings out of 478893
+ 21748 string characters out of 2849984
+ 317425 words of memory out of 3000000
+ 19213 multiletter control sequences out of 15000+600000
+ 409641 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,66p,266b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on sd.pdf (8 pages, 342885 bytes).
+{C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on sd.pdf (15 pages, 616614 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
