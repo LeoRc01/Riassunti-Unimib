@@ -536,15 +536,72 @@
         \includegraphics[scale=0.4]{codici.png}
     \end{figure}    
 
+    \subsection{Tipi di comunicazione}
+    \begin{itemize}
+        \item Comunicazione \textbf{asincrona o sincrona}
+        \item Comunicazione \textbf{transiente} (se il destinatario non è connesso, i dati vengono scaricati)
+        \item Comunicazione \textbf{persistente} (il middleware memorizza i dati fino alla consegna del messaggio al destinatario)
+    \end{itemize}
+    
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.7]{asysy.png}
+        \includegraphics[scale=0.7]{tra.png}
+        \includegraphics[scale=0.7]{ef.png}
+    \end{figure}
+    \newpage
 
+    \subsection{Message Queing}
+    Offre uno spazio di storage intermedio per i messaggi, senza che ne il client 
+    o il server siano attivi durante la trasmissione. \\Esistono 4 tipi di comunicazione:
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{queing.png}
+    \end{figure}
+    4 tipi di primitive:
+    \begin{itemize}
+        \item \textbf{Put} - appende un messaggio ad una coda specifica
+        \item \textbf{Get} - Blocca fino a che la coda specifica è non vuota, e rimuove il primo messaggio
+        \item \textbf{Poll} - Rimuove il primo messaggio ma non blocca 
+        \item \textbf{Notify} - installa un handler che viene chiamato quando un messaggio è inserito dentro una coda
+    \end{itemize}
+    \newpage
+    \section{Applicazioni Web}
+    La computazione dei dati avviene lato server e può avvenire tramite \textbf{programmi compilati} o
+    \textbf{script interpretati}.
+    \\\\Nel caso di \textbf{programmi compilati}, il web server si limita ad invocare un eseguibile.
+    \\\\Nel caso di \textbf{script} il web server ha un suo \textbf{engine} (motore) in grado di 
+    interpretare il linguaggio di scripting usato. (PHP, Java, Perl, Python, NodeJS)
 
+    \subsection*{CGI (Common Gateway Interface)}
+    CGI è un protocollo che permette al server di:
+    \begin{itemize}
+        \item attivare un programma
+        \item passargli le ricehiste e i parametri provenienti dal client
+        \item recuperare la risposta
+    \end{itemize}
+    Questo protocollo viene gestito dall'interprete per il linguaggio usato (PVM Interpreter, JVM Interpreter, PHP Interpreter)
 
-
-
+    \subsection{Java Servlet}
+    Sono piccole applicazione Java residenti sul \textbf{server}. Essa viene gestita in modo automatico
+    da un \textbf{container} o \textbf{engine}.
+    \\\\Ha una interfaccia che definisc il set di metodi (ri)definibili.
+    \\\\Siccome risiedono sul server, le servlet mantengono uno stato e consentono
+    l'interazione con un'altra servlet. (sono oggetti Java alla fine)
+    \\\\HTTP però non prevede persistenza (è stateless), per cui mantenere lo stato della conversazione
+    è un compito dell'applicazione (se vuole):
+    \begin{itemize}
+        \item Cookies
+        \begin{itemize}
+            \item Le informazioni vengono memorizzate sul client
+            \item Permettono di gestire le sessioni
+        \end{itemize}
+        \item HTTPSession
+    \end{itemize}
 
 
     \newpage
-    \section{HTML+(DOM+)CSS}
+    \section{HTML+(DOM)+CSS}
     \subsection{Linguaggi di Markup}
     Un linguaggio di Markup è utilizzato per \textit{annotare un documento} in modo 
     tale che l'annotazione sia \textit{sintatticamente distinguibile} dal testo.
