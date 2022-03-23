@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  14 MAR 2022 10:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  23 MAR 2022 11:21
 entering extended mode
 **"c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex"
 (c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex
@@ -111,24 +111,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--98
  []
 
 [4 <./images//roles.png>] [5]
+Overfull \hbox (21.24573pt too wide) in paragraph at lines 130--131
+\OT1/cmr/m/n/12 approccio prevede la dis-tinzione log-ica tra en-tita co-muni e non, come uomo/donna
+ []
+
 <./images//generalizzazione.png, id=25, 402.75468pt x 274.02374pt>
 File: ./images//generalizzazione.png Graphic file (type png)
 <use ./images//generalizzazione.png>
-Package pdftex.def Info: ./images//generalizzazione.png  used on input line 133.
+Package pdftex.def Info: ./images//generalizzazione.png  used on input line 134.
 (pdftex.def)             Requested size: 281.92635pt x 191.8153pt.
- [6 <./images//generalizzazione.png>] (db.aux) ) 
+[6 <./images//generalizzazione.png>]
+<./images//ibrido.png, id=30, 688.07062pt x 337.26pt>
+File: ./images//ibrido.png Graphic file (type png)
+<use ./images//ibrido.png>
+Package pdftex.def Info: ./images//ibrido.png  used on input line 173.
+(pdftex.def)             Requested size: 344.03447pt x 168.62958pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--176
+
+ []
+
+[7 <./images//ibrido.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 179--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--186
+
+ []
+
+<./images//rel.png, id=36, 660.96938pt x 169.38281pt>
+File: ./images//rel.png Graphic file (type png)
+<use ./images//rel.png>
+Package pdftex.def Info: ./images//rel.png  used on input line 189.
+(pdftex.def)             Requested size: 330.48387pt x 84.6912pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--196
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 204.
+(C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 204.
+ [8 <./images//rel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 245--250
+
+ []
+
+[10]
+<./images//vincoli.png, id=52, 573.64313pt x 208.52907pt>
+File: ./images//vincoli.png Graphic file (type png)
+<use ./images//vincoli.png>
+Package pdftex.def Info: ./images//vincoli.png  used on input line 259.
+(pdftex.def)             Requested size: 286.82086pt x 104.26427pt.
+ [11 <./images//vincoli.png>] (db.aux) ) 
 Here is how much of TeX's memory you used:
- 1253 strings out of 478893
- 19908 string characters out of 2849984
- 316428 words of memory out of 3000000
- 19155 multiletter control sequences out of 15000+600000
- 409282 words of font info for 46 fonts, out of 8000000 for 9000
+ 1300 strings out of 478893
+ 20860 string characters out of 2849984
+ 317430 words of memory out of 3000000
+ 19195 multiletter control sequences out of 15000+600000
+ 410000 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,66p,259b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on db.pdf (6 pages, 160991 bytes).
+ 57i,8n,66p,414b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on db.pdf (11 pages, 659375 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

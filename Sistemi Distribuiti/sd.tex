@@ -1,6 +1,7 @@
 % the first part of the document before the begin is called preamble
 \documentclass[12pt, a4paper]{article}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \graphicspath{ {./images/} }
 %
 \author{Leonardo Valente}
@@ -382,5 +383,235 @@
         \centering
         \includegraphics[scale=0.66]{select.png}
     \end{figure}
+
+    \subsection*{Struttura di un Server Concorrente}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.55]{serverconcorrente.png}
+        \caption{Un esempio di codice pratico lo puoi trovare al seguente link: \url{https://github.com/LeoRc01/Concurrent-Socket}}
+    \end{figure}
+
+    \section{Architettura del Web}
+    Il web supporta l'interazione tra Client e Server attraverso il protocollo HTTP.
+    \begin{itemize}
+        \item Il client è formato da \textit{browser} oppure anche chiamato \textbf{User-agent}
+        \item Il server è formato ad un \textit{web server} o \textbf{HTTP Server}
+    \end{itemize}
     
+    \subsection{Browser}
+    Il browser è una applicazione che consente al client di navigare sul web.
+    \\La sua funzione primaria è quella di \textbf{interpretare} il codice con cui sono espresse 
+    le informazioni (pagine web) e \textbf{visualizzarle} sullo schermo.
+
+    \subsection{Web page}
+    Una pagina web è costituita da diversi risorse. Una risorsa è un file residente in un computer
+    identificato da un URL, ovvero un indirizzo univoco che punta alla risorsa. 
+    \\La maggior parte delle pagine web sono costituite da un file HTML.
+
+    \subsection{Web server}
+    Un web server è una applicazione che si occupa di gestire le risorse su un computer 
+    e di renderle disponibili al client
+    \newpage
+    \subsection{URL (Uniform Resource Locator)}
+    \textbf{Identifica} un oggetto nella rete e specifica come interpretare i dati ricevuti
+    attraverso il protocollo.
+    \\Un URL ha cinque componenti principali:
+    \begin{itemize}
+        \item Nome del protocollo
+        \item Indirizzo dell'host
+        \item Porta del processo
+        \item Percorso dell'host
+        \item Identificatore della risorsa
+    \end{itemize}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{url.png}
+    \end{figure}
+
+    \subsection{Linguaggi del web}
+    I \textbf{dati} testuali sono espressi in linguaggi standard:
+    \begin{itemize}
+        \item HTML - per definire la struttura dei contenuti della pagina web.
+        \\\\Un file HTML può contenere (nella maggior parte dei casi) dei contenuti scritti
+        in CSS (gestisce la parte grafica e di "rendering")
+        \item XML | JSON - focalizzato sui dati e la loro struttura
+    \end{itemize}
+    I dati possono anche essere non testuali (file di immagini, file di audio, file di video, ecc.)
+    Essi vengono gestiti attraverso dei sistemi di \textit{Encoding}.
+    \\\\
+    Esistono anche dei linguaggi di scripting (JavaScript, VBSCript, Java, ecc.) che permettono 
+    di arricchire la pagina web di funzionalità più complesse che magari non possono essere implementate
+    esclusivamente attraverso HTML e CSS.
+
+    \section{Message Oriented Comunication}
+    \subsection{Il protocollo HTTP}
+    HTTP (o anche HTTPS) è il protocollo standard per la comunicazione, e lo scambio di risorse,
+    tra client e server. HTTP usa TPC per la comunicazione.
+    \begin{itemize}
+        \item Il client inizia una connessione TCP (crea una socket) verso il server sulla porta 80 (443 nel caso di HTTPS)
+        \item Il server accetta la connessione TCP dal client
+        \item Vengono scambiati i messaggi tra il browser e il Web-server
+    \end{itemize}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{http.png}
+    \end{figure}
+    
+    HTTP è un protocollo \textbf{stateless}, ovvero che non mantiene in memoria informazioni sul client.
+    
+    \newpage
+    \subsection{Formato dei messaggi HTTP}
+
+    Formato \textbf{generale} di un messaggio HTTP:
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{httpgeneral.png}
+    \end{figure}
+    \\La prima parte in verde è \textbf{obbligatoria}.
+    \\La parte gialla è il \textbf{payload} (il contenuto del messaggio).
+
+    Formato di una richiesta HTTP:
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{httprequest.png}
+    \end{figure}
+    
+    \begin{itemize}
+        \item \textbf{GET} - metodo della richiesta
+        \item \textbf{/somedir/page.html} - percorso della risorsa
+        \item \textbf{HTTP/1.1} - versione del protocollo
+        \item \textbf{Host: www.someschool.edu} - URL del server
+        \item \textbf{Connection: close} - cosa fare al termine del messaggio (in questo caso chiudere la connessione)
+        \item \textbf{User-Agent: Mozilla/4.0} - il browser utilizzato dal client
+        \item \textbf{Accept: text/html, image/gif, image/jpeg} - che tipi di file sono accettati
+        \item \textbf{Accept-Language: fr} - linguaggio della risorsa richiesta. (Se hai la risorsa francese, mandamela in francese).
+    \end{itemize}
+
+    \subsection*{Metodi di richiesta}
+    \begin{itemize}
+        \item \textbf{GET}
+            \begin{itemize}
+                \item Restituisce la risorsa richiesta
+                \item Include eventuali parametri in coda alla URL della risorsa
+                \item L'esecuzione non ha effetti sul server
+                \item Esiste anche il \textbf{GET Condizionale}, ovvero non inviare oggetti che il client ha già in cache
+            \end{itemize}
+            \item \textbf{POST}
+            \begin{itemize}
+                \item Comunica dei dati da elaborare lato server
+                \item L'input segue come documento autonomo
+                \item I parametri passati non vengono mostrati esplicitamente
+            \end{itemize}
+            \item \textbf{HEAD}
+            \begin{itemize}
+                \item Simile a GET, ma viene restituito solo il header della pagina web
+                \item Usata per il \textbf{debugging}
+            \end{itemize}
+    \end{itemize}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.4]{metodi.png}
+    \end{figure}
+
+    \newpage
+    Formato di una response HTTP:
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.4]{httpresponse.png}
+    \end{figure}
+
+    \textbf{Perchè sono state inserite informazioni sulla dimensione e sul tipo dei dati restituiti?}
+
+    \begin{itemize}
+        \item \textbf{Lenght} - mi serve per vedere fino a quando devo leggere
+        \item \textbf{Type} - per far capire al client come deve interpretare la risposta
+    \end{itemize}
+
+    \subsection{Codici di risposta}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.4]{codici.png}
+    \end{figure}    
+
+
+
+
+
+
+
+
+    \newpage
+    \section{HTML+(DOM+)CSS}
+    \subsection{Linguaggi di Markup}
+    Un linguaggio di Markup è utilizzato per \textit{annotare un documento} in modo 
+    tale che l'annotazione sia \textit{sintatticamente distinguibile} dal testo.
+    \\Le annotazioni possono avere diverse finalità:
+    \begin{itemize}
+        \item Presentazione (definiscono come visualizzare il testo)
+        \item Precedurali (definiscono istruzioni per programmi che elaborino il testo al quale sono associate)
+        \item Descrittive (metadati, possono servire per il browser per identificare alcune informazioni, etichettano semplicemente parti del testo, )
+    \end{itemize}
+
+
+    \subsection{HTML}
+    HyperText Markup Language è un linguaggio di markup per \textbf{dare struttura ai contenuti} del web.
+    La struttura data al contenuto viene esplicitata tramite i \textbf{tag}. Essi \textit{delimitano}
+    dei pezzi di documento e possono essere composti da altri tag. Ogni tag ha un suo particolare effetto.
+    \\In assenza di CSS, il browser si "arrangia" nel dare una rappresentazione grafica standard del documento.
+
+    \subsection{CSS}
+    Cascading Style Sheets è un linguaggio di markup per \textbf{definire uno stile} ai contenuti del web.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{css.png}
+    \end{figure}
+
+    \subsubsection{Selectors}
+    Possiamo specificare un selettore più preciso rispetto al nome del tag.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{selector.png}
+        \includegraphics[scale=0.5]{selectors.png}
+    \end{figure}
+
+    \subsubsection{Media Query}
+    Le media query possono essere viste come particolari selettori capaci di 
+    \textbf{valutare le capacità del device} di accesso alla pagina.
+    \\Servono per controllare ad esempio:
+    \begin{itemize}
+        \item Larghezza e Altezza del device
+        \item Orientamento dello schermo
+        \item Risoluzione
+    \end{itemize}
+    Oggi come oggi, gli stili dei siti web sono \textit{responsive}, ovvero che lo stile
+    di rappresentazione della pagina varia in base alla larghezza dello schermo. 
+    (Quindi in base al device di accesso alla pagina).
+
+    \subsubsection{Perchè cascading?}
+    Esistono potenzialmente diversi stylesheets:
+    \begin{itemize}
+        \item L'autore della pagina in genere ne specifica uno o pià di uno
+        \item Il browser ne ha uno, o un vero e proprio CSS o simulato nel loro codice
+        \item Il lettore, l'utente del browser ne può definire uno proprio per customizzare la propria esperienza
+    \end{itemize}
+    Sono quindi inevitabili dei \textbf{conflitti} ed è necessario definire un algoritmo per decidere quale stile vada applicato ad un elemento.
+
+    \subsection{DOM}
+    Document Object Model è una \textbf{interfaccia neutrale} rispetto al linguaggio di programmazione e alla piattaforma utilizzata
+    per consentire ai programmi l'accesso e la modifica dinamica di \textbf{contenuto, struttura e stile} di un documento del web.
+    \\
+    Ogni nodo può essere caratterizzato da attributi che ne facilitano l'identificazione, la ricerca,
+    la selezione:
+    \begin{itemize}
+        \item \textbf{Identificatore Univoco}
+        \item \textbf{Classe} che indica l'appartenenza ad un insieme che ci è utile definire
+    \end{itemize}
+
+
+
+    
+
 \end{document}

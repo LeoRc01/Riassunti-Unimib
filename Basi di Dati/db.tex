@@ -127,6 +127,7 @@
         \item \textbf{Completa}: l'unione delle istanze delle sottoentità è uguale all'insieme delle istanze dell'entità padre.
         \item \textbf{Non completa}.
     \end{itemize}
+    approccio prevede la distinzione logica tra entità comuni e non, come uomo/donna e sportivo o impiegato.
 
     \begin{figure}[htbp]
         \centering
@@ -134,8 +135,8 @@
         
         \label{<label>}
     \end{figure}
-
-    Come possiamo vedere, nella relazione  \textit{completa}, l'unione dei due sottoinsiemi A e B è proprio 
+ Un ulteriore caratteristica della generazione è l’esclusività, una generalizzazione esclusiva prevede che un elemento possa appartenere solo a una delle categorie (uomo o donna). In caso vi siano più appartenenze, si definisce sovrapposto, ad esempio uomo donna e dottore (un’istanza può essere sia dottore che uomo o donna). 
+    \\Come possiamo vedere, nella relazione  \textit{completa}, l'unione dei due sottoinsiemi A e B è proprio 
     l'insieme "padre" C. Nella relazione \textit{NON completa}, invece, ci saranno alcuni elementi di C che non fanno
     parte ne di A e ne di B.
     \\
@@ -145,6 +146,123 @@
     Ogni proprietà del padre è anche una proprietà del figlio, che però non viene esplicitamente riportata nello schema concettuale.
     \\L'entità figlio può avere degli attributi in più rispetto all'entità padre.
 
+    \newpage
+    \subsection{Strategie di Progetto}
+    Come procediamo con tante specifiche anche dettagliate?
 
+    \begin{itemize}
+        \item top-down
+        \item bottom-up
+        \item inside-out
+    \end{itemize}
+
+    \subsubsection*{Top-down}
+    Si parte da uno schema iniziale molto astratto ma completo, che viene successivamente
+    raffinato fino ad arrivare allo schema finale.\\Si parte dall'alto, e mano a mano si scende
+
+    \subsubsection*{Bottom-up}
+    Si suddividono le specifiche in modo da sviluppare semplici schemi parziali ma dettagliati,
+    che poi vengono integrati tra di loro
+
+    \subsubsection*{Inside-out}
+    Parto dal primo termine e mano a mano sviluppo.
+    \\\\
+    Esiste anche una \textbf{strategia ibrida}, che è un insieme di tutte e 3.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{ibrido.png}
+        
+    \end{figure}    
+
+    \newpage
+    \section{Modello Relazionale}
+    Un modello dei dati è un insieme di concetti per organizzare i dati 
+    e descriverne la struttura. Questo modello deve essere comprensibile a un elaboratore.
+    La componente fondamendale di ogni modello sono i \textbf{meccanismi di strutturazione}.
+    \\\\Il \textbf{Modello Relazionale} è il modello di dati più diffuso.
+    \\\\Permette di definire per mezzo del costruttore relazione che permette di organizzare
+    i dati in insiemi di record a struttura fissa. Una relazione è spesso rappresentata da una tabella.
+    \textit{La relazione è un modo di relazionare i dati. Non è una relazione matematica ne è una relazione del modello ER.}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{rel.png}
+    \end{figure}
+
+    Il Livello Logico è \textbf{indipendente} da quello fisico: una tabella è usata nello stesso modo
+    sia nel livello logico che nel livello fisico.
+    \\\\
+    In una relazione non ci sono più tuple con lo stesso valore. Altrimenti non sarebbe una relazione.
+
+    \subsection*{Definizione di \textit{Schema di Relazione}}
+    Un nome $R$ con un insieme di attributi $X = \{A_1, A_2, ..., A_n\}$\\
+    es: STUDENTI(Matricola, Cognome, Nome, DataNascita)
+
+    \subsection*{Definizione di \textit{Schema di Base di Dati}}
+    Insieme di schemi di relazione con nomi diversi:
+    \\R = {STUDENTI(...), ESAMI(...), CORSI(...)}
+    \\R = \{$R_1(X_1), ..., R_n(X_n)$\}
+
+    \newpage
+    \subsection*{Definizione di \textit{Tupla}}
+    Una tupla su un insieme di attributi X è una funzione \textit{t} che associa a ciascun attributo A in X
+    un valore del dominio di A.
+    \\t[A] oppure t.A denota il valore della tupla t sull'attributo A.
+
+
+    \subsection*{Chiave}
+    Insieme di attributi che identificano univocamente le tuple di una relazione.
+    \\Formalmente:
+    \begin{itemize}
+        \item Un insieme K di attributi è \textbf{superchiave} per r se r non contiene
+        due tuple distinte $t_1$ e $t_2$ tali che $t_1[K] = t_2[K]$.
+        \item K è \textbf{chiave} per r se è una superchiave minimale per r
+        \\(minimale significa che se si dovesse eliminare un attributo della superchiave, essa 
+        non risulterebbe più una superchiave)
+        \\
+    \end{itemize}
+    L'esistenza delle chiavi garantisce l'accessibilità a ciascun dato della base di dati.
+    \newpage
+    All'interno di una relazione, però, ci possono essere dei valori \textit{nulli}.
+    \\Tre casi differenti: 
+    \begin{itemize}
+        \item Valore sconosciuto
+        \item Valore inesistente
+        \item Valore senza informazione
+    \end{itemize}
+
+    I DBMS non fanno distinzione tra questi casi.
+
+    \subsection{Vincoli di integritrà}
+    Alcuni esempi di vincoli di integrità:
+    \begin{itemize}
+        \item Valori nulli
+        \item Valori fuori del dominio
+        \item Tuple incosistenti 
+        \item Tuple con valori uguale per chiavi
+        \item Valori inesistenti in attributi usati per corrispondenze tra relazioni
+    \end{itemize}
+    I vincoli di integrità vengono usati per descrivere in modo più accurato la realtà dei fatti.
+    Danno un contributo alla "qualità dei dati" e sono utili nella progettazione. 
+    Sono anche usati dai DBMS nella esecuzione delle interrogazioni.
+    \\\\Alcune volte, però, non tutte le proprietà di interesse sono rappresentabili per mezzo di vincoli 
+    di integrità esprimibili direttamente. Verrano gestiti al di fuori della base di dati. 
+    \newpage
+    \subsubsection*{Tipi di vincoli}
+    \begin{itemize}
+        \item Vincoli su \textbf{valori} (un voto di esame non può andare oltre a 30)
+        \item Vincoli di \textbf{tupla} (una lode può essere data solo a un voto di valore 30)
+        \item Vincoli di \textbf{chiave} (non possono esistere due chiavi)
+    \end{itemize}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{vincoli.png}
+        
+    \end{figure}
+
+    Esistono anche dei \textit{Vincoli \textbf{interrelazioni}} che coinvolgono più relazioni:
+    \begin{itemize}
+        \item Vincoli di integrità \textbf{referenziale}
+    \end{itemize}
 
     \end{document}

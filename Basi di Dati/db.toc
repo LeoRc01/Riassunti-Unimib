@@ -9,3 +9,6 @@
 \contentsline {section}{\numberline {3}Relazione IS-A}{5}{}%
 \contentsline {subsubsection}{\numberline {3.0.1}Generalizzazione}{6}{}%
 \contentsline {subsubsection}{\numberline {3.0.2}Principio di ereditarietà}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Strategie di Progetto}{7}{}%
+\contentsline {section}{\numberline {4}Modello Relazionale}{8}{}%
+\contentsline {subsection}{\numberline {4.1}Vincoli di integritrà}{10}{}%
