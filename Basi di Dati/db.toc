@@ -12,3 +12,4 @@
 \contentsline {subsection}{\numberline {3.1}Strategie di Progetto}{7}{}%
 \contentsline {section}{\numberline {4}Modello Relazionale}{8}{}%
 \contentsline {subsection}{\numberline {4.1}Vincoli di integritrà}{10}{}%
+\contentsline {subsection}{\numberline {4.2}Vincoli di Integrità Referenziale}{11}{}%

@@ -104,6 +104,7 @@
     \subsection{Identificatori di una entità}
     E' uno strumento per l'identificazione univoca delle occorrenze di una entità.
     Ci sono due tipi di identificatori:
+    \\\textbf{(!!!! CAMBIARE LE DEFINZIONI NON SONO CORRETTE !!!)}
     \begin{itemize}
         \item \textbf{Identificatore interno} (Primary Key), che serve per distinguere in modo univoco una istanza di una entità.
         \textit{Deve essere unico}.
@@ -265,4 +266,16 @@
         \item Vincoli di integrità \textbf{referenziale}
     \end{itemize}
 
+    \subsection{Vincoli di Integrità Referenziale}
+    Un vincolo di integrità referenziale è un vincolo di integrità \textbf{interrelazionale}, ovvero si verifica quando andiamo
+    a trattare due o più relazioni. 
+    \\\\Una \textbf{Foreign Key} (vincolo di integrità referenziale) fra gli attributi X (uno o più attributi) di una relaizone $R_1$ e un'altra relazione $R_2$ impone ai valori 
+    su X in $R_1$ di comparire \textbf{come valori della chiave primaria di $R_2$}.
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{foreignkey.png}
+        \\\textit{Nel compitino \textbf{Le foreign key vanno cerchiate!!}}
+    \end{figure}
+    
     \end{document}

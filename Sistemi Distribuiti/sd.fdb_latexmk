@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1647863355 "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" "sd.pdf" "sd" 1647863359
+["pdflatex"] 1647863355 "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" "sd.pdf" "sd" 1648033224
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1634741608 10390718 756107502a83d8b9ec995772ee88b1be ""
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1634734329 335493 e59bd1a6c1c38f69c60a89e13211d84d ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001771820 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -67,7 +67,7 @@
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" 1647863353 29525 b5341e8d9240c0160a2fd9c067e8ce4a ""
+  "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" 1648033223 29525 b5341e8d9240c0160a2fd9c067e8ce4a ""
   "images//clientserver.png" 1646835772 61629 f04c381acc3ea2ba4fca3f0286d0f212 ""
   "images//codici.png" 1647602107 210504 262e043112c380b45e92fde8bd2cbaa1 ""
   "images//css.png" 1647860220 207372 693de3f629f36b113b959f831c163371 ""
@@ -91,11 +91,11 @@
   "images//url.png" 1647597436 102160 5049f84ff95962f246540161c041fb5c ""
   "sd.aux" 1647863357 5516 89ad1624d9175e4cb055c618232cc8de "pdflatex"
   "sd.out" 1647863357 5534 b66adf1691ce8347bc5c645cf16d7733 "pdflatex"
-  "sd.tex" 1647863353 29525 b5341e8d9240c0160a2fd9c067e8ce4a ""
+  "sd.tex" 1648033223 29525 b5341e8d9240c0160a2fd9c067e8ce4a ""
   "sd.toc" 1647863357 3085 b53311c50737e57948a5b5ec9f393b88 "pdflatex"
   (generated)
   "sd.log"
+  "sd.aux"
   "sd.toc"
   "sd.pdf"
   "sd.out"
-  "sd.aux"
