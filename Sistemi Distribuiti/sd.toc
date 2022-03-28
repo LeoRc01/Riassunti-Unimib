@@ -31,11 +31,12 @@
 \contentsline {subsection}{\numberline {7.5}Message Queing}{24}{subsection.7.5}%
 \contentsline {section}{\numberline {8}Applicazioni Web}{25}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Java Servlet}{25}{subsection.8.1}%
-\contentsline {section}{\numberline {9}HTML+(DOM)+CSS}{26}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Linguaggi di Markup}{26}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}HTML}{26}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}CSS}{26}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Selectors}{27}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Media Query}{27}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}Perchè cascading?}{28}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}DOM}{28}{subsection.9.4}%
+\contentsline {subsection}{\numberline {8.2}Pattern MVC}{26}{subsection.8.2}%
+\contentsline {section}{\numberline {9}HTML+(DOM)+CSS}{27}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Linguaggi di Markup}{27}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}HTML}{27}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}CSS}{27}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Selectors}{28}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Media Query}{28}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}Perchè cascading?}{29}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}DOM}{29}{subsection.9.4}%

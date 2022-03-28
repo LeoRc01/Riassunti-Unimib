@@ -565,6 +565,14 @@
         \item \textbf{Poll} - Rimuove il primo messaggio ma non blocca 
         \item \textbf{Notify} - installa un handler che viene chiamato quando un messaggio è inserito dentro una coda
     \end{itemize}
+
+
+
+
+
+
+
+
     \newpage
     \section{Applicazioni Web}
     La computazione dei dati avviene lato server e può avvenire tramite \textbf{programmi compilati} o
@@ -598,6 +606,33 @@
         \end{itemize}
         \item HTTPSession
     \end{itemize}
+    Una servlet viene creata dal container quando viene creata dal container.
+    Essa viene condivisa da tutti i client, però ogni richiesta genera un Thread 
+    che esegue la \textit{doXXX} appropriata.
+    \\Viene invece distrutta quando:
+    \begin{itemize}
+        \item non ci sono più servizi in esecuzione
+        \item dopo un quanto di tempo predefinito (timeout)
+    \end{itemize}
+
+    \subsection{Pattern MVC}
+    Il pattern MVC (Model View Controller) ha lo scopo di separare
+    \begin{itemize}
+        \item I dati e i metodi per manipolarli (Model)
+        \item La presentazione, la GUI (View)
+        \item Il coordinamento dell'interazione tra interfaccia e i dati (Controller)
+    \end{itemize}
+    \textbf{Vantaggi}
+    \\\\MVC offre una chiara separazione tra i vari layer di sviluppo di una applicazione (business, presentazione e dati)
+    Ogni componente ha una responsabilità ben definita e ogni parte può essere affidata ad un esporto.
+    Questo modello permette anche di creare un codice più ordinato, quindi più facile da mantenere e da aggiornare.
+    \\\\
+    \textbf{Svantaggi}
+    \begin{itemize}
+        \item Inefficenza nel passaggio dei dati alla view (mediazione del controller)
+        \item Aumento della complessità dovuta alla concorrenza (è un sistema distribuito, più "attori" da coordinare e mettere assieme)
+    \end{itemize}
+
 
 
     \newpage
