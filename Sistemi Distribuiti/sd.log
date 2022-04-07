@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  28 MAR 2022 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  4 APR 2022 16:32
 entering extended mode
 **"c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex"
 (c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex
@@ -220,7 +220,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `sd.toc'.
 
-
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 27--42
 
  []
@@ -235,8 +235,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--42
 
  []
 
-[2] [3]
-<./images//layered.png, id=231, 1309.89375pt x 526.21594pt>
+[3]
+<./images//layered.png, id=271, 1309.89375pt x 526.21594pt>
 File: ./images//layered.png Graphic file (type png)
 <use ./images//layered.png>
 Package pdftex.def Info: ./images//layered.png  used on input line 91.
@@ -247,7 +247,7 @@ Overfull \hbox (29.17458pt too wide) in paragraph at lines 91--92
  []
 
 [4 <./images//layered.png>] [5] [6]
-<./images//clientserver.png, id=249, 615.80063pt x 268.00125pt>
+<./images//clientserver.png, id=289, 615.80063pt x 268.00125pt>
 File: ./images//clientserver.png Graphic file (type png)
 <use ./images//clientserver.png>
 Package pdftex.def Info: ./images//clientserver.png  used on input line 147.
@@ -257,13 +257,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--156
 
  []
 
-<./images//servermultipli.png, id=250, 402.00188pt x 276.28218pt>
+<./images//servermultipli.png, id=290, 402.00188pt x 276.28218pt>
 File: ./images//servermultipli.png Graphic file (type png)
 <use ./images//servermultipli.png>
 Package pdftex.def Info: ./images//servermultipli.png  used on input line 163.
 (pdftex.def)             Requested size: 201.00044pt x 138.14075pt.
 [7 <./images//clientserver.png> <./images//servermultipli.png>]
-<./images//proxy.png, id=258, 499.11469pt x 190.46156pt>
+<./images//proxy.png, id=298, 499.11469pt x 190.46156pt>
 File: ./images//proxy.png Graphic file (type png)
 <use ./images//proxy.png>
 Package pdftex.def Info: ./images//proxy.png  used on input line 172.
@@ -303,7 +303,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--266
 
  []
 
-<./images//socketsteps.png, id=269, 659.46375pt x 213.79875pt>
+<./images//socketsteps.png, id=309, 659.46375pt x 213.79875pt>
 File: ./images//socketsteps.png Graphic file (type png)
 <use ./images//socketsteps.png>
 Package pdftex.def Info: ./images//socketsteps.png  used on input line 272.
@@ -338,7 +338,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
-<./images//socketsteps2.png, id=282, 676.77844pt x 279.29344pt>
+<./images//socketsteps2.png, id=322, 676.77844pt x 279.29344pt>
 File: ./images//socketsteps2.png Graphic file (type png)
 <use ./images//socketsteps2.png>
 Package pdftex.def Info: ./images//socketsteps2.png  used on input line 301.
@@ -358,18 +358,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--338
 
  []
 
-<./images//monoprocesso.png, id=288, 240.14719pt x 177.66376pt>
+<./images//monoprocesso.png, id=328, 240.14719pt x 177.66376pt>
 File: ./images//monoprocesso.png Graphic file (type png)
 <use ./images//monoprocesso.png>
 Package pdftex.def Info: ./images//monoprocesso.png  used on input line 348.
 (pdftex.def)             Requested size: 168.10187pt x 124.36377pt.
 [13 <./images//monoprocesso.png>]
-<./images//multithread.png, id=295, 236.38312pt x 193.47281pt>
+<./images//multithread.png, id=335, 236.38312pt x 193.47281pt>
 File: ./images//multithread.png Graphic file (type png)
 <use ./images//multithread.png>
 Package pdftex.def Info: ./images//multithread.png  used on input line 360.
 (pdftex.def)             Requested size: 118.19127pt x 96.73616pt.
-<./images//multiprocesso.png, id=296, 243.15843pt x 185.19188pt>
+<./images//multiprocesso.png, id=336, 243.15843pt x 185.19188pt>
 File: ./images//multiprocesso.png Graphic file (type png)
 <use ./images//multiprocesso.png>
 Package pdftex.def Info: ./images//multiprocesso.png  used on input line 368.
@@ -379,12 +379,12 @@ Overfull \hbox (26.90213pt too wide) in paragraph at lines 377--381
 \OT1/cmr/m/n/12 (Una istruzione \OT1/cmr/m/it/12 bloc-cante \OT1/cmr/m/n/12 e quando il sis-tema at-tende la con-clu-sione dell'operazione
  []
 
-<./images//select.png, id=303, 280.79906pt x 285.31593pt>
+<./images//select.png, id=343, 280.79906pt x 285.31593pt>
 File: ./images//select.png Graphic file (type png)
 <use ./images//select.png>
 Package pdftex.def Info: ./images//select.png  used on input line 384.
 (pdftex.def)             Requested size: 185.32794pt x 188.3091pt.
-<./images//serverconcorrente.png, id=304, 782.17218pt x 356.83313pt>
+<./images//serverconcorrente.png, id=344, 782.17218pt x 356.83313pt>
 File: ./images//serverconcorrente.png Graphic file (type png)
 <use ./images//serverconcorrente.png>
 Package pdftex.def Info: ./images//serverconcorrente.png  used on input line 390.
@@ -395,7 +395,7 @@ Overfull \hbox (40.19603pt too wide) in paragraph at lines 390--391
  []
 
 [15 <./images//select.png> <./images//serverconcorrente.png>] [16]
-<./images//url.png, id=320, 984.67876pt x 237.88875pt>
+<./images//url.png, id=360, 984.67876pt x 237.88875pt>
 File: ./images//url.png Graphic file (type png)
 <use ./images//url.png>
 Package pdftex.def Info: ./images//url.png  used on input line 429.
@@ -416,13 +416,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 440--446
  []
 
 [17 <./images//url.png>]
-<./images//http.png, id=326, 490.08093pt x 475.7775pt>
+<./images//http.png, id=366, 490.08093pt x 475.7775pt>
 File: ./images//http.png Graphic file (type png)
 <use ./images//http.png>
 Package pdftex.def Info: ./images//http.png  used on input line 459.
 (pdftex.def)             Requested size: 245.03987pt x 237.88815pt.
  [18 <./images//http.png>]
-<./images//httpgeneral.png, id=332, 892.83563pt x 299.61937pt>
+<./images//httpgeneral.png, id=372, 892.83563pt x 299.61937pt>
 File: ./images//httpgeneral.png Graphic file (type png)
 <use ./images//httpgeneral.png>
 Package pdftex.def Info: ./images//httpgeneral.png  used on input line 470.
@@ -432,7 +432,7 @@ Overfull \hbox (56.41672pt too wide) in paragraph at lines 470--471
  [][] 
  []
 
-<./images//httprequest.png, id=333, 888.31876pt x 283.0575pt>
+<./images//httprequest.png, id=373, 888.31876pt x 283.0575pt>
 File: ./images//httprequest.png Graphic file (type png)
 <use ./images//httprequest.png>
 Package pdftex.def Info: ./images//httprequest.png  used on input line 478.
@@ -443,7 +443,7 @@ Overfull \hbox (54.1583pt too wide) in paragraph at lines 478--479
  []
 
 [19 <./images//httpgeneral.png> <./images//httprequest.png>]
-<./images//metodi.png, id=341, 1154.81438pt x 404.26031pt>
+<./images//metodi.png, id=381, 1154.81438pt x 404.26031pt>
 File: ./images//metodi.png Graphic file (type png)
 <use ./images//metodi.png>
 Package pdftex.def Info: ./images//metodi.png  used on input line 516.
@@ -454,7 +454,7 @@ Overfull \hbox (71.91757pt too wide) in paragraph at lines 516--517
  []
 
 [20 <./images//metodi.png>]
-<./images//httpresponse.png, id=348, 1186.4325pt x 385.44pt>
+<./images//httpresponse.png, id=388, 1186.4325pt x 385.44pt>
 File: ./images//httpresponse.png Graphic file (type png)
 <use ./images//httpresponse.png>
 Package pdftex.def Info: ./images//httpresponse.png  used on input line 523.
@@ -464,7 +464,7 @@ Overfull \hbox (84.56459pt too wide) in paragraph at lines 523--524
  [][] 
  []
 
-<./images//codici.png, id=349, 1102.87032pt x 512.66531pt>
+<./images//codici.png, id=389, 1102.87032pt x 512.66531pt>
 File: ./images//codici.png Graphic file (type png)
 <use ./images//codici.png>
 Package pdftex.def Info: ./images//codici.png  used on input line 536.
@@ -475,17 +475,17 @@ Overfull \hbox (51.14032pt too wide) in paragraph at lines 536--537
  []
 
 [21 <./images//httpresponse.png> <./images//codici.png>]
-<./images//asysy.png, id=356, 549.55313pt x 272.51813pt>
+<./images//asysy.png, id=396, 549.55313pt x 272.51813pt>
 File: ./images//asysy.png Graphic file (type png)
 <use ./images//asysy.png>
 Package pdftex.def Info: ./images//asysy.png  used on input line 548.
 (pdftex.def)             Requested size: 384.68457pt x 190.76138pt.
-<./images//tra.png, id=357, 570.63188pt x 275.52937pt>
+<./images//tra.png, id=397, 570.63188pt x 275.52937pt>
 File: ./images//tra.png Graphic file (type png)
 <use ./images//tra.png>
 Package pdftex.def Info: ./images//tra.png  used on input line 549.
 (pdftex.def)             Requested size: 399.43959pt x 192.86923pt.
-<./images//ef.png, id=358, 661.72218pt x 278.54062pt>
+<./images//ef.png, id=398, 661.72218pt x 278.54062pt>
 File: ./images//ef.png Graphic file (type png)
 <use ./images//ef.png>
 Package pdftex.def Info: ./images//ef.png  used on input line 550.
@@ -501,7 +501,7 @@ Overfull \hbox (73.20236pt too wide) in paragraph at lines 548--551
  []
 
 [22] [23 <./images//asysy.png> <./images//tra.png> <./images//ef.png>]
-<./images//queing.png, id=370, 532.99126pt x 389.20406pt>
+<./images//queing.png, id=410, 532.99126pt x 389.20406pt>
 File: ./images//queing.png Graphic file (type png)
 <use ./images//queing.png>
 Package pdftex.def Info: ./images//queing.png  used on input line 559.
@@ -542,47 +542,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 625--631
  []
 
 [26]
-<./images//css.png, id=386, 647.41875pt x 332.74312pt>
+Overfull \hbox (2.3728pt too wide) in paragraph at lines 638--643
+\OT1/cmr/bx/n/12 Service Ori-ented Ar-chi-tec-ture \OT1/cmr/m/n/12 (SOA) e uno stile ar-chitet-turale per costru-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--643
+
+ []
+
+[27]
+<./images//slo.png, id=430, 417.05812pt x 130.23656pt>
+File: ./images//slo.png Graphic file (type png)
+<use ./images//slo.png>
+Package pdftex.def Info: ./images//slo.png  used on input line 665.
+(pdftex.def)             Requested size: 208.52855pt x 65.11812pt.
+<./images//coreografia.png, id=431, 458.46281pt x 112.92188pt>
+File: ./images//coreografia.png Graphic file (type png)
+<use ./images//coreografia.png>
+Package pdftex.def Info: ./images//coreografia.png  used on input line 681.
+(pdftex.def)             Requested size: 320.92177pt x 79.04475pt.
+ [28 <./images//slo.png> <./images//coreografia.png>]
+Overfull \hbox (24.70541pt too wide) in paragraph at lines 697--699
+\OT1/cmr/m/n/12 soft-ware e delle ap-pli-cazioni di co-mu-ni-care us-ando pro-to-clliu stan-dard dell'internet
+ []
+
+<./images//soap_components.png, id=438, 514.92375pt x 324.46219pt>
+File: ./images//soap_components.png Graphic file (type png)
+<use ./images//soap_components.png>
+Package pdftex.def Info: ./images//soap_components.png  used on input line 708.
+(pdftex.def)             Requested size: 257.46124pt x 162.23068pt.
+[29 <./images//soap_components.png>]
+Overfull \hbox (4.92229pt too wide) in paragraph at lines 732--733
+[]\OT1/cmr/m/n/12 Hypermedia e il modo per con-trol-lare il com-por-ta-mento dell'applicazione 
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 739.
+(C:\Users\Leo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 739.
+
+Overfull \hbox (11.34322pt too wide) in paragraph at lines 735--749
+\OT1/cmr/m/n/12 Le risorse hanno un iden-ti-fi-ca-tore uni-voco (unimib.it/\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 matricola\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 /pianoStudio) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--749
+
+ []
+
+[30]
+Overfull \hbox (2.9899pt too wide) in paragraph at lines 758--765
+\OT1/cmr/m/n/12 nati dati per ot-tenere un certo tipo di in-for-mazione. (/search?approved=false)
+ []
+
+[31] [32]
+<./images//css.png, id=463, 647.41875pt x 332.74312pt>
 File: ./images//css.png Graphic file (type png)
 <use ./images//css.png>
-Package pdftex.def Info: ./images//css.png  used on input line 661.
+Package pdftex.def Info: ./images//css.png  used on input line 812.
 (pdftex.def)             Requested size: 323.70857pt x 166.37114pt.
-<./images//selector.png, id=387, 536.75531pt x 187.45032pt>
+<./images//selector.png, id=464, 536.75531pt x 187.45032pt>
 File: ./images//selector.png Graphic file (type png)
 <use ./images//selector.png>
-Package pdftex.def Info: ./images//selector.png  used on input line 668.
+Package pdftex.def Info: ./images//selector.png  used on input line 819.
 (pdftex.def)             Requested size: 268.37698pt x 93.72491pt.
-<./images//selectors.png, id=388, 813.79031pt x 402.00188pt>
+<./images//selectors.png, id=465, 813.79031pt x 402.00188pt>
 File: ./images//selectors.png Graphic file (type png)
 <use ./images//selectors.png>
-Package pdftex.def Info: ./images//selectors.png  used on input line 669.
+Package pdftex.def Info: ./images//selectors.png  used on input line 820.
 (pdftex.def)             Requested size: 406.89417pt x 201.00044pt.
 
-Overfull \hbox (16.89417pt too wide) in paragraph at lines 668--670
+Overfull \hbox (16.89417pt too wide) in paragraph at lines 819--821
  [] 
  []
 
-[27 <./images//css.png>] [28 <./images//selector.png> <./images//selectors.png>]
-Overfull \hbox (19.41797pt too wide) in paragraph at lines 695--700
+[33 <./images//css.png>] [34 <./images//selector.png> <./images//selectors.png>]
+Overfull \hbox (19.41797pt too wide) in paragraph at lines 846--851
 \OT1/cmr/m/n/12 Ogni nodo puo es-sere carat-ter-iz-zato da at-tributi che ne fa-cil-i-tano l'identificazione,
  []
 
-[29] (sd.aux)
+[35] (sd.aux)
 Package rerunfilecheck Info: File `sd.out' has not changed.
-(rerunfilecheck)             Checksum: C645BC3D0F31A4AF2FD866A27A66ABC6;6198.
+(rerunfilecheck)             Checksum: 734FF8A2ACF277D532831F038D182057;7230.
  ) 
 Here is how much of TeX's memory you used:
- 8162 strings out of 478893
- 125635 string characters out of 2849984
- 428722 words of memory out of 3000000
- 25849 multiletter control sequences out of 15000+600000
+ 8233 strings out of 478893
+ 126986 string characters out of 2849984
+ 428730 words of memory out of 3000000
+ 25895 multiletter control sequences out of 15000+600000
  409810 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,66p,379b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on sd.pdf (29 pages, 2399616 bytes).
+{C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on sd.pdf (35 pages, 2650659 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 539 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 541 words of extra memory for PDF output out of 10000 (max. 10000000)
 

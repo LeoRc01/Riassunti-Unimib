@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  23 MAR 2022 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.20)  6 APR 2022 13:10
 entering extended mode
 **"c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex"
 (c:/Users/Leo/Desktop/Riassunti LaTex/Basi di Dati/db.tex
@@ -94,13 +94,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1
 
-{C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+{C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
 Underfull \hbox (badness 10000) in paragraph at lines 70--76
 
  []
 
-[3]
-<./images//roles.png, id=16, 481.8pt x 280.04625pt>
+[4]
+<./images//roles.png, id=19, 481.8pt x 280.04625pt>
 File: ./images//roles.png Graphic file (type png)
 <use ./images//roles.png>
 Package pdftex.def Info: ./images//roles.png  used on input line 84.
@@ -110,18 +110,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--98
 
  []
 
-[4 <./images//roles.png>] [5]
+[5 <./images//roles.png>] [6]
 Overfull \hbox (21.24573pt too wide) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 approccio prevede la dis-tinzione log-ica tra en-tita co-muni e non, come uomo/donna
  []
 
-<./images//generalizzazione.png, id=25, 402.75468pt x 274.02374pt>
+<./images//generalizzazione.png, id=28, 402.75468pt x 274.02374pt>
 File: ./images//generalizzazione.png Graphic file (type png)
 <use ./images//generalizzazione.png>
 Package pdftex.def Info: ./images//generalizzazione.png  used on input line 135.
 (pdftex.def)             Requested size: 281.92635pt x 191.8153pt.
-[6 <./images//generalizzazione.png>]
-<./images//ibrido.png, id=30, 688.07062pt x 337.26pt>
+[7 <./images//generalizzazione.png>]
+<./images//ibrido.png, id=34, 688.07062pt x 337.26pt>
 File: ./images//ibrido.png Graphic file (type png)
 <use ./images//ibrido.png>
 Package pdftex.def Info: ./images//ibrido.png  used on input line 174.
@@ -131,7 +131,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--177
 
  []
 
-[7 <./images//ibrido.png>]
+[8 <./images//ibrido.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 180--187
 
  []
@@ -141,7 +141,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--187
 
  []
 
-<./images//rel.png, id=36, 660.96938pt x 169.38281pt>
+<./images//rel.png, id=39, 660.96938pt x 169.38281pt>
 File: ./images//rel.png Graphic file (type png)
 <use ./images//rel.png>
 Package pdftex.def Info: ./images//rel.png  used on input line 190.
@@ -157,18 +157,18 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 205.
- [8 <./images//rel.png>]
+ [9 <./images//rel.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 220--224
 
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 246--251
 
  []
 
-[10]
-<./images//vincoli.png, id=52, 573.64313pt x 208.52907pt>
+[11]
+<./images//vincoli.png, id=55, 573.64313pt x 208.52907pt>
 File: ./images//vincoli.png Graphic file (type png)
 <use ./images//vincoli.png>
 Package pdftex.def Info: ./images//vincoli.png  used on input line 260.
@@ -178,24 +178,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--274
 
  []
 
-<./images//foreignkey.png, id=53, 676.02562pt x 289.83281pt>
+<./images//foreignkey.png, id=56, 676.02562pt x 289.83281pt>
 File: ./images//foreignkey.png Graphic file (type png)
 <use ./images//foreignkey.png>
 Package pdftex.def Info: ./images//foreignkey.png  used on input line 277.
 (pdftex.def)             Requested size: 338.01198pt x 144.91605pt.
-[11 <./images//vincoli.png> <./images//foreignkey.png>] (db.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--294
+
+ []
+
+[12 <./images//vincoli.png> <./images//foreignkey.png>]
+<./images//createschema.png, id=62, 685.8122pt x 308.65312pt>
+File: ./images//createschema.png Graphic file (type png)
+<use ./images//createschema.png>
+Package pdftex.def Info: ./images//createschema.png  used on input line 310.
+(pdftex.def)             Requested size: 342.90526pt x 154.32617pt.
+<./images//createtable.png, id=63, 593.96906pt x 149.05687pt>
+File: ./images//createtable.png Graphic file (type png)
+<use ./images//createtable.png>
+Package pdftex.def Info: ./images//createtable.png  used on input line 317.
+(pdftex.def)             Requested size: 296.9838pt x 74.52824pt.
+ [13 <./images//createschema.png>]
+<./images//createdomain.png, id=69, 566.115pt x 86.57344pt>
+File: ./images//createdomain.png Graphic file (type png)
+<use ./images//createdomain.png>
+Package pdftex.def Info: ./images//createdomain.png  used on input line 334.
+(pdftex.def)             Requested size: 283.05681pt x 43.2866pt.
+<./images//createvoto2.png, id=70, 433.62pt x 90.3375pt>
+File: ./images//createvoto2.png Graphic file (type png)
+<use ./images//createvoto2.png>
+Package pdftex.def Info: ./images//createvoto2.png  used on input line 339.
+(pdftex.def)             Requested size: 216.80946pt x 45.16862pt.
+
+Overfull \hbox (15.17496pt too wide) in paragraph at lines 331--341
+\OT1/cmr/m/n/12 Questo co-mando definisce un nuovo do-minio el-e-mentare uti-liz-z-abile in definizioni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--346
+
+ []
+
+[14 <./images//createtable.png> <./images//createdomain.png> <./images//createvoto2.png>] [15]
+<./images//select.png, id=80, 703.87968pt x 394.47375pt>
+File: ./images//select.png Graphic file (type png)
+<use ./images//select.png>
+Package pdftex.def Info: ./images//select.png  used on input line 379.
+(pdftex.def)             Requested size: 351.93898pt x 197.23639pt.
+ [16 <./images//select.png>] (db.aux) ) 
 Here is how much of TeX's memory you used:
- 1308 strings out of 478893
- 21075 string characters out of 2849984
+ 1348 strings out of 478893
+ 22166 string characters out of 2849984
  317430 words of memory out of 3000000
- 19202 multiletter control sequences out of 15000+600000
+ 19237 multiletter control sequences out of 15000+600000
  410000 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,66p,414b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,8n,66p,414b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on db.pdf (11 pages, 724857 bytes).
+Output written on db.pdf (16 pages, 1091657 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

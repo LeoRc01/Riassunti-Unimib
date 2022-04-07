@@ -277,5 +277,111 @@
         \includegraphics[scale=0.5]{foreignkey.png}
         \\\textit{Nel compitino \textbf{Le foreign key vanno cerchiate!!}}
     \end{figure}
+
+    \section{Progettazione Logica}
+
+
+
+
+    \section{SQL}
+    Structured Query Language è un linguaggio dichiarativo per la definizione e la manipolazione dei dati in database 
+    relazionali, adottato da molti DBMS.
+    \\\\
+    SQL è \textbf{relazionalmente completo}: ogni espressione dell'algebra relazionale
+    può essere tradotta in SQL. Esso adotta la logica a 3 valori (T, F, U).
+    \\Il modello dei dati di SQL è basato su \textbf{tabelle} anzichè \textbf{relazioni}.
+    \\\\SQL contiene:
+    \begin{itemize}
+        \item DDL (Data Definition Language) - operazioni di definizione e modifica di schemi
+        \item DML (Data Manipulation Language) - operazioni di inserimento, modifica e cancellazione di dati
+    \end{itemize}
+
+    \subsection*{Istruzioni Principali di DML}
+    \begin{itemize}
+        \item SELECT - Operazioni di interrogazione. Formula query come quelle dell'AR o richieste più elaborate.
+        \item INSERT, DELETE, UPDATE - Operazioni di aggiornamento. Inserisce, elimina, aggiorna tuple.
+    \end{itemize}
+
+    \subsection*{Istruzioni Principali di DML}
+    \begin{itemize}
+        \item CREATE SCHEMA - Crea un nuovo schema
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.5]{createschema.png}
+        \end{figure}
+        \item CREATE TABLE - Crea una nuova tabella;
+        \\Una tabella è costituita da una collezione ordinata di attributi e da
+        un insieme (eventualmente vuoto) di vincoli.
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.5]{createtable.png}
+        \end{figure}
+    \end{itemize}
+
+    \subsection*{Domini Elementari}
+    SQL ha 6 domini predefiniti
+    \begin{itemize}
+        \item Carattere (VARCHAR, CHAR)
+        \item Numerico Esatto (INTEGER)
+        \item Numerico Approssimato
+        \item Data/Ora (TIMESTAMP, DATE, TIME)
+        \item Intervallo Temporale
+        \item Boolenan (ex Bit)
+    \end{itemize}
+    C'è anche la possibilità di definire nuovi domini usando \textbf{CREATE DOMAIN}.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{createdomain.png}
+    \end{figure} 
+    \\Questo comando definisce un nuovo dominio elementare utilizzabile in definizioni di relazioni.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{createvoto2.png}
+    \end{figure}
+
+    \subsection*{Vincoli}
+    Un vincolo è una regola che specifica delle condizioni sui valori di un elemento
+    dello schema del database.
+    \\\\Un vincolo può essere associato ad una tabella, attributo o dominio.
+
+    \begin{itemize}
+        \item Vincoli Intrarelazionali - proprietà sempre valida all'interno di una relaizone
+        \begin{itemize}
+            \item NOT NULL - il valore deve essere non nullo
+            \item UNIQUE - i valori devono essere non ripetuti
+            \item PRIMARY KEY - chiave primaria della tabella
+            \item CHECK - definisce condizioni complesse
+        \end{itemize}
+        \item Vincoli Interrelazionali - proprietà sempre valida tra relazioni diverse
+        \item \begin{itemize}
+            \item FOREIGN KEY, REFERENCES - permettono di definire le chiavi esterne.\\
+            Impone ai valori degli attributi X nella tabella Figlio di comparire \textit{come valori della chiave primaria della tabella Padre}
+            \item CHECK
+        \end{itemize}
+    \end{itemize}
+    Se viene eseguita una operazione di aggiornamento che porta alla
+    violazione di un vincolo di integrità referenziale, (per ogni vincolo
+    visto) lo stato della base di dati diventa non valido.Sono perciò definite un insieme di politiche per evitare che questo
+    accada. Tali politiche vanno dichiarate nella dichiarazione DDL dello
+    schema.
+    \begin{itemize}
+        \item CASCADE - l'operazione di modifica/cancellazione viene propagata alla tabella interna
+        \item SET NULL - NULL nella tabella figlio in entrambi i casi
+        \item SE DEFAULT - default nella tabella figlio in entrambi i casi
+        \item NO ACTION - rifiutata in entrambi i casi
+    \end{itemize}
+
+    \newpage
+    \subsection{Interrogazioni SQL}
+    Le interrogazioni di SQL avvengono tramite l'istruzione \textbf{SELECT} (che non significa "seleziona").
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{select.png}
+    \end{figure}
+        
+
+
+
+    
     
     \end{document}

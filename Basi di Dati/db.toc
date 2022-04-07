@@ -2,14 +2,17 @@
 \contentsline {subsection}{\numberline {1.1}Progettazione}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Progettazione concettuale}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.2}Progettazione logica}{2}{}%
-\contentsline {subsubsection}{\numberline {1.1.3}Progettazione fisica}{2}{}%
-\contentsline {subsection}{\numberline {1.2}Introduzione al Modello ER}{3}{}%
-\contentsline {section}{\numberline {2}Cardinalità delle Relazioni}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Identificatori di una entità}{5}{}%
-\contentsline {section}{\numberline {3}Relazione IS-A}{5}{}%
-\contentsline {subsubsection}{\numberline {3.0.1}Generalizzazione}{6}{}%
-\contentsline {subsubsection}{\numberline {3.0.2}Principio di ereditarietà}{6}{}%
-\contentsline {subsection}{\numberline {3.1}Strategie di Progetto}{7}{}%
-\contentsline {section}{\numberline {4}Modello Relazionale}{8}{}%
-\contentsline {subsection}{\numberline {4.1}Vincoli di integritrà}{10}{}%
-\contentsline {subsection}{\numberline {4.2}Vincoli di Integrità Referenziale}{11}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Progettazione fisica}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Introduzione al Modello ER}{4}{}%
+\contentsline {section}{\numberline {2}Cardinalità delle Relazioni}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Identificatori di una entità}{6}{}%
+\contentsline {section}{\numberline {3}Relazione IS-A}{6}{}%
+\contentsline {subsubsection}{\numberline {3.0.1}Generalizzazione}{7}{}%
+\contentsline {subsubsection}{\numberline {3.0.2}Principio di ereditarietà}{7}{}%
+\contentsline {subsection}{\numberline {3.1}Strategie di Progetto}{8}{}%
+\contentsline {section}{\numberline {4}Modello Relazionale}{9}{}%
+\contentsline {subsection}{\numberline {4.1}Vincoli di integritrà}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Vincoli di Integrità Referenziale}{12}{}%
+\contentsline {section}{\numberline {5}Progettazione Logica}{13}{}%
+\contentsline {section}{\numberline {6}SQL}{13}{}%
+\contentsline {subsection}{\numberline {6.1}Interrogazioni SQL}{16}{}%

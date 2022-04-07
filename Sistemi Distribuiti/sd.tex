@@ -633,7 +633,158 @@
         \item Aumento della complessità dovuta alla concorrenza (è un sistema distribuito, più "attori" da coordinare e mettere assieme)
     \end{itemize}
 
+    \newpage
+    \section{Servizi e SOAP}
+    \textbf{Service Oriented Architecture} (SOA) è uno stile architetturale per costruire \textit{applicazioni distribuite}, dove
+    l'accesso al servizio può essere fornito tramite l'internet.
+    \\\\
+    L'elemento principale di questo sistema è il \textbf{servizio}. Esso fornisce \textbf{features} e \textbf{funzioni} a client \textit{indipendenti}.
+    Ogni servizio dovrebbe:
+    \begin{itemize}
+        \item fornire una \textit{descrizione} da scoprire e selezionare
+        \item fornire accesso tramite protocolli standard
+        \item indirizzare i bisogni di business del cliente e i requisiti di dominio (funzionali e non-funzionali)
+    \end{itemize}
+    \subsection{Web Service}
+    Un \textit{Web Service} è una \textbf{applicazione software}
+    \begin{itemize}
+        \item identificata da un URI
+        \item le quali interfacce e "bindings" sono capaci di essere \textbf{definite, descritte e scoperte}
+        \item supporta interazioni dirette con altri software usando \textit{messaggi} attraverso protocolli basati sull'internet
+    \end{itemize}
+    Una definizione più informale ma diretta è:\\
+    "\textit{Un web service è un software indipendente che può essere scoperto e invocato da altri sistemi software attraverso l'internet.}"
 
+    \newpage
+    \subsection{Service Model: SLA}
+    SLA (Service Level Agreement) è un contratto definito tra il provider e l'utente dei servizi.
+    \\Questo contratto definisce il requisiti \textbf{non-funzionali} che il servizio deve \textit{garantire}.
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{slo.png}
+    \end{figure}
+    Cost, Availability e Response Time vengono chiamati \textbf{SLO} (Service Level Objectives).
+
+    \subsection{Composizione di Servizi}
+    Una composizione consiste in una serie di servizi che sono interconnessi tra loro, che a turno
+    potrebbero essere usati come un nuovo servizio in altre composizioni. Ovviamente ci deve essere \textit{compatibilità}
+    tra i servizi per avere una composizione di successo.
+
+    \begin{itemize}
+        \item \textbf{Orchestrazione} - descrive come i servizi devono interagire tra di loro a livello di messaggistica, 
+        includendo la \textit{business logic} e \textit{l'ordine di esecuzione}
+        \item \textbf{Coreogragia} - descrive la sequenza di messaggi che potrebbero coinvolgere più parti e più fonti coinvolte nel processo
+        dalla prospettiva di tutte le parti
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.7]{coreografia.png}
+        \end{figure}
+    \end{itemize}
+
+    \subsection{WSDL}
+    WSDL (Web Service Description Language) 
+    è un linguaggio \textbf{XML-Based} per descrivere i servizi e come accederci.
+    \\Descrive:
+    \begin{itemize}
+        \item Interfacce - informazioni che descrivono tutte le operazioni pubbliche
+        \item Tipi di dato - dichiarazione per tutti i messaggi di richiesta e di risposta
+        \item Binding - informazioni sul protocollo di trasporto
+        \item Address - informazioni sulla località del servizio (URI)
+    \end{itemize}
+
+    \subsection{SOAP}
+    SOAP è un protocollo basato su XML per permettere alle componenti dei software e delle applicazioni
+    di comunicare usando protoclliu standard dell'internet (e.g HTTP)
+    \begin{itemize}
+        \item SOAP è un protocollo stateless e \textbf{one-way}
+        \item Ignora la semantica del messaggio trasferito
+        \item L'interazione tra i due siti deve essere codificata all'interno del documento SOAP
+    \end{itemize}
+    Questo protocollo non è legato a nessuno linguaggio di programmazione o piattaforma, è però semplice e estendibile.
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.5]{soap_components.png}
+    \end{figure}
+    SOAP però non è più molto usanto in quanto troppo verboso (rispetto ad esempio a JSON). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    \newpage
+    \section{REST}
+    \textbf{RE}presentational \textbf{S}tate \textbf{T}ransfer, è uno stile architetturale per i sistemi distribuiti.
+    \begin{itemize}
+        \item Le risorse sono definite tramite URI (/baseURL/resourceType/{id}) e sono manipolate tramite le loro rappresentazioni
+        \item Ci possono essere più tipi di rappresentazione per una risorsa (XML, JSON, HTML)
+        \item La comunicazione avviene tramite messaggi, che sono auto-descrittivi e stateless
+        \item Lo stato di una applicazione avviene attraverso la manipolazione delle risorse
+        \item Hypermedia è il modo per controllare il comportamento dell'applicazione
+    \end{itemize}
+    \subsection*{Risorse}
+    Una risorsa è un qualsiasi tipo di informazione che può avere un nome: documenti, immagini,
+    servizi...\\
+    Le risorse hanno uno \textbf{stato} (Luce - accesa/spenta) che può cambiare nel tempo, tramite (di solito)
+    una interazione con l'utente.
+    \\Le risorse hanno un identificatore univoco (unimib.it/\{matricola\}/pianoStudio)
+    \\\\
+    Le risorse per essere acquisite e rappresentate richiedono una architettura \textit{client - server}.
+    L'utente ha anche la possibilità di manipolare una risorsa, per esempio: uno studente può manipolare
+    il proprio piano di studi, aggiungendo o rimuovendo i corsi.
+    Tendenzialmente, la rappresentazione ritornata dal server dovrebbe collegarsio a un'altra
+    rappresentazione/azione. (Hypermedia)
+    \\\\
+    Le interazioni devono essere \textbf{stateless}, quindi non devono usufruire di informazioni di contesto salvate nel server.
+    Viene quindi usato un sistema di \textbf{caching} che serve anche per ridurre la latenza e il traffico sulla rete.
+    \newpage
+    \subsection{Costruzione di un servizio REST}
+    \begin{itemize}
+        \item Trovare tutti i \textbf{nomi}
+        \item Definire i formati
+        \item Scegliere le operazioni
+        \item Evidenziare i codici di stato (soprattuto in caso di errore)
+    \end{itemize}
+    \subsection*{Trovare tutti i nomi}
+    Tutte le risorse all'interno di un servizio REST sono un URI, che di per se deve
+    essere \textbf{descrittivo}. (dato un URI, devo riuscire a capire cosa mi restituisce)
+    \\Bisogna usare le \textbf{path variables} per creare una gerarchia delle informazioni
+    e per tenerle più ordinate. (/expenses/pending/\{id\})
+    \\Si possono usare le \textbf{query variables} per dare in input all'algoritmo determinati dati
+    per ottenere un certo tipo di informazione. (/search?approved=false)
+    E' importante anche non mostrare le informazioni della piattaforma usata per creare il servizio (e.g /expensese\textit{.php})
+    \subsection*{Definire i formati}
+    Il consiglio è quello di non creare dei tipi di rappresentazione "custom", quindi usare quelli standard (tipo JSON, XML, ecc...)
+    Un client dovrebbe avere le possibilità di ottenere, modificare o eliminare un documento e il server
+    deve scartare qualsiasi altro tipo di richiesta.
+    \subsection*{Scegliere le operazioni}
+    Per la maggior parte delle applicazioni, i metodi di base dell'HTTP sono sufficenti:
+    \begin{itemize}
+        \item GET - richiedere una risorsa
+        \item POST - aggiungere nuove risorse
+        \item PUT - trasferisce una risorsa al server
+        \item DELETE - elimina una risorsa
+    \end{itemize}
+    PUT vs POST: 
+    \begin{itemize}
+        \item POST quando il server sceglie l'URI
+        \item PUT quando il client sceglie l'URI
+    \end{itemize}
+    POST fa qualcosa e riceve qualcosa, che non sempre può essere necessario, quindi crea un \textbf{overload} di informazioni.
+    \subsection*{Evidenziare i codici di stato}
+    Bisogna dare un feedback all'utente dopo aver effettuato una operazione. 
+    Quindi se il client richiede una risorsa non esistente, riceverà come risposta un determinato codice e seguirà
+    un feedback (attraverso la UI) per l'utente spiegando che la risorsa non esiste.
+    \\Questo concetto va applicato anche per gli errori e i successi di una richiesta.
 
     \newpage
     \section{HTML+(DOM)+CSS}
@@ -701,12 +852,5 @@
         \item \textbf{Identificatore Univoco}
         \item \textbf{Classe} che indica l'appartenenza ad un insieme che ci è utile definire
     \end{itemize}
-
-
-
-    
-
-
-    
 
 \end{document}
