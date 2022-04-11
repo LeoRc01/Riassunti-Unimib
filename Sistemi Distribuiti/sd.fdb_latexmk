@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1649082735 "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" "sd.pdf" "sd" 1649323239
+["pdflatex"] 1649412123 "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" "sd.pdf" "sd" 1649412126
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1634745208 10390718 756107502a83d8b9ec995772ee88b1be ""
   "C:/Users/Leo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1634737929 335493 e59bd1a6c1c38f69c60a89e13211d84d ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001775420 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -69,7 +69,7 @@
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/refcount/refcount.sty" 1576437552 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575574882 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/Leo/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" 1649323237 42254 6b22f7d983e0228c4bfa3159193d5c19 ""
+  "c:/Users/Leo/Desktop/Riassunti LaTex/Sistemi Distribuiti/sd.tex" 1649412122 45808 cefb6f84d4ae1556ba1e8d2ec9627922 ""
   "images//asysy.png" 1648048608 61201 13015f9c1a01292b72c70a379034085a ""
   "images//clientserver.png" 1646839372 61629 f04c381acc3ea2ba4fca3f0286d0f212 ""
   "images//codici.png" 1647605707 210504 262e043112c380b45e92fde8bd2cbaa1 ""
@@ -87,6 +87,7 @@
   "images//multithread.png" 1647259207 25364 b065e2992eb1b4d1d06328c05e7fdeee ""
   "images//proxy.png" 1646840048 78691 a20d6d6a06bf4730c4d83d3343e552d4 ""
   "images//queing.png" 1648049844 47234 2935fa956bb2fcb6d9d8610c317886b9 ""
+  "images//rpc.png" 1649409020 17467 68a15e12f9515b41f82f762ff947f118 ""
   "images//select.png" 1647260021 55532 06177c29a68e7c959eeb93ff51ccdc35 ""
   "images//selector.png" 1647864993 48779 0723a8bf32523d6dd702f434392b1575 ""
   "images//selectors.png" 1647865097 389813 0a22a8a4fb1cf9a3cfb82c1945693b8b ""
@@ -98,13 +99,13 @@
   "images//socketsteps2.png" 1646998748 107548 9448fbe031326a33e5f551daee4c93a3 ""
   "images//tra.png" 1648048620 58118 9950a94650aacdf27b9d3c4253c67e67 ""
   "images//url.png" 1647601036 102160 5049f84ff95962f246540161c041fb5c ""
-  "sd.aux" 1649082738 7093 4ae54432bd7dc917b040cf00535d6f00 "pdflatex"
-  "sd.out" 1649082738 7230 734ff8a2acf277d532831f038d182057 "pdflatex"
-  "sd.tex" 1649323237 42254 6b22f7d983e0228c4bfa3159193d5c19 ""
-  "sd.toc" 1649082738 4129 c1f9665d024648b7edb27a7e2fab2a6b "pdflatex"
+  "sd.aux" 1649412125 7476 f0d88332ad0fdd1b8f74ac75c8cc3a04 "pdflatex"
+  "sd.out" 1649412125 7675 3aa5b786fd1916da63d84d5ac4089be4 "pdflatex"
+  "sd.tex" 1649412122 45808 cefb6f84d4ae1556ba1e8d2ec9627922 ""
+  "sd.toc" 1649412125 4389 2ed85218a98b23c6a6f96666888cd85a "pdflatex"
   (generated)
   "sd.toc"
+  "sd.log"
   "sd.pdf"
   "sd.out"
-  "sd.log"
   "sd.aux"

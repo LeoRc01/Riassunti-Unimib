@@ -1,50 +1,53 @@
-\contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Che cosa è un sistema distribuito?}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {1}Introduzione}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Che cosa è un sistema distribuito?}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Caratteristiche}{3}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Gruppi}{4}{subsection.1.3}%
 \contentsline {section}{\numberline {2}Architetture Software}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Tipi di layer}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Tipi di layer}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Diversi tipi di Sistemi Distribuiti}{5}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Il Modello Client-Server}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Problemi Fondamentali}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Trasparenza}{8}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Information Hiding}{9}{subsubsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.3}Il concetto di Protocollo}{9}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Le Socket}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Servizi di trasporto di dati}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Comunicazione via socket}{11}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Progettare una Applicazione con le Socket}{12}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Architettura dei Server}{13}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Server Iterativi}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Server Concorrenti}{13}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Architettura del Web}{16}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Browser}{16}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Web page}{16}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Web server}{16}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}URL (Uniform Resource Locator)}{17}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Linguaggi del web}{17}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Message Oriented Comunication}{18}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Il protocollo HTTP}{18}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Formato dei messaggi HTTP}{19}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Codici di risposta}{21}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Tipi di comunicazione}{22}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Message Queing}{24}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Applicazioni Web}{25}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Java Servlet}{25}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Pattern MVC}{26}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Servizi e SOAP}{27}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Web Service}{27}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Service Model: SLA}{28}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Composizione di Servizi}{28}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}WSDL}{28}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}SOAP}{29}{subsection.9.5}%
-\contentsline {section}{\numberline {10}REST}{30}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Costruzione di un servizio REST}{31}{subsection.10.1}%
-\contentsline {section}{\numberline {11}HTML+(DOM)+CSS}{33}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Linguaggi di Markup}{33}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}HTML}{33}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}CSS}{33}{subsection.11.3}%
-\contentsline {subsubsection}{\numberline {11.3.1}Selectors}{34}{subsubsection.11.3.1}%
-\contentsline {subsubsection}{\numberline {11.3.2}Media Query}{34}{subsubsection.11.3.2}%
-\contentsline {subsubsection}{\numberline {11.3.3}Perchè cascading?}{35}{subsubsection.11.3.3}%
-\contentsline {subsection}{\numberline {11.4}DOM}{35}{subsection.11.4}%
+\contentsline {section}{\numberline {3}Il Modello Client-Server}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Problemi Fondamentali}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Trasparenza}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Information Hiding}{10}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Il concetto di Protocollo}{10}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Le Socket}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Servizi di trasporto di dati}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Comunicazione via socket}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Progettare una Applicazione con le Socket}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Architettura dei Server}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Server Iterativi}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Server Concorrenti}{14}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Architettura del Web}{17}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Browser}{17}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Web page}{17}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Web server}{17}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}URL (Uniform Resource Locator)}{18}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Linguaggi del web}{18}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Message Oriented Comunication}{19}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Il protocollo HTTP}{19}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Formato dei messaggi HTTP}{20}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Codici di risposta}{22}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Tipi di comunicazione}{23}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Message Queing}{25}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Applicazioni Web}{26}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Java Servlet}{26}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Pattern MVC}{27}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Servizi e SOAP}{28}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Web Service}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Service Model: SLA}{29}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Composizione di Servizi}{29}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}WSDL}{29}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}SOAP}{30}{subsection.9.5}%
+\contentsline {section}{\numberline {10}REST}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Costruzione di un servizio REST}{32}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Remote Procedure Call}{33}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Java RMI}{34}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Passaggio di parametri}{34}{subsubsection.11.1.1}%
+\contentsline {section}{\numberline {12}HTML+(DOM)+CSS}{36}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Linguaggi di Markup}{36}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}HTML}{36}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}CSS}{36}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}Selectors}{37}{subsubsection.12.3.1}%
+\contentsline {subsubsection}{\numberline {12.3.2}Media Query}{37}{subsubsection.12.3.2}%
+\contentsline {subsubsection}{\numberline {12.3.3}Perchè cascading?}{38}{subsubsection.12.3.3}%
+\contentsline {subsection}{\numberline {12.4}DOM}{38}{subsection.12.4}%

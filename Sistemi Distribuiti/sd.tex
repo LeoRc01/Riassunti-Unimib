@@ -786,6 +786,86 @@
     un feedback (attraverso la UI) per l'utente spiegando che la risorsa non esiste.
     \\Questo concetto va applicato anche per gli errori e i successi di una richiesta.
 
+    \section{Remote Procedure Call}
+    Il modello RPC maschera il modello client-server, nel senso che il client
+    effettua una chiamata a procedura remota presente nel server e si mette in attesa, il server la esegue e successivamente
+    risponde al client. Sono presenti anche modelli dove il client effettua una chiamata asincrona senza aspettarsi una rispota,
+    oppure si aspetterà una risposta in un futuro senza però aspettarla
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=0.7]{rpc.png}
+    \end{figure}
+    
+    \subsection*{Differenza tra Puntatori e References}
+    \textbf{Puntatore}:
+    \begin{itemize}
+        \item è una variabile che contiene un indirizzo di memoria
+        \item può essere modificata in ogni momento 
+        \item non è tipizzato
+    \end{itemize}
+    \textbf{Reference}:
+    \begin{itemize}
+        \item è una variabile che contiene informazioni logiche per accedere ad un oggetto
+        \item è immutabile: può essere inizializzato all'atto della creazione di un oggetto
+        \item la classe dell'oggetto definisce il tipo
+    \end{itemize}
+
+    \subsection{Java RMI}
+    RMI è un middleware che estende l'approccio OO al distribuito. Esso supporta
+    l'invocazione di metodi tra oggetti su macchine virtuali distinte.
+    Durante queste invocazioni vengono passati e ritornati veri e propri oggetti Java.
+    \\\\Fornisce determinati servizi:
+    \begin{itemize}
+        \item caricamento e controllo con un class loader e un security manager
+        \item gestione degli oggetti remoti, replicati e persistenti
+        \item attivazione automatica degli oggetti
+        \item multi-threading
+        \item garbage collector di oggetti remoti
+    \end{itemize}
+
+    \subsubsection{Passaggio di parametri}
+    \begin{itemize}
+        \item \textbf{Trasferimento per valore}:
+        \item \begin{itemize}
+            \item i tipi primitivi sono passati per valore,
+            \item anche gli oggetti non remoti vengono passati per valore, \textit{solo se SERIALIZZABILI}
+        \end{itemize}
+        \item \textbf{Trasferimento per referenza}:
+        \item \begin{itemize}
+            \item i riferimenti ad oggetti remoti vengono passati per valore per permettere invocazioni remote. 
+        \end{itemize}
+    \end{itemize}
+    La \textbf{serializzazione} rappresenta lo stato di un oggetto come stream di byte.
+    Questa operazione è essenziale per poter memorizzare e ricostruire lo stato degli oggetti:
+    \begin{itemize}
+        \item trasferire oggetti via rete
+        \item definire oggetti persistenti
+    \end{itemize}
+    
+    \subsubsection*{Identificazione degli oggetti remoti}
+    Vengono utilizzati dei nomi asseganti dall'utente e un directoy (o naming) service per convertirli in reference operativi.
+    I directory service devono essere disponibili ad un host e porta noti.
+    \\\\RMI definisce un \textbf{\textit{rmiregistry}} che è una directory di oggetti remoti e sta su ogni macchina che ospita oggetti remoti.   
+    Convenzionalmente sta sulla porta 1099.
+
+    \begin{itemize}
+        \item Il server pubblica il reference e il nome dell'oggetto remoto nel \textit{Registry} invocando il metodo bind (della classe naming)
+        \item il client ottiene il reference all'oggetto invocando il metodo lookup (della classe Naming)
+        \item il client accede all'oggetto remoto il reference e i nomi dei metodi remoti
+    \end{itemize} 
+
+
+
+
+
+
+
+
+
+
+
+
+
     \newpage
     \section{HTML+(DOM)+CSS}
     \subsection{Linguaggi di Markup}
